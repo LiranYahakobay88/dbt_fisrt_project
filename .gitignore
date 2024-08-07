@@ -1,4 +1,11 @@
+# Python
+*.pyc
+__pycache__/
+venv/
 
+# dbt
 target/
 dbt_packages/
-logs/
+
+# Environment files
+.env

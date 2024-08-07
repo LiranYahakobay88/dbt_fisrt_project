@@ -1,0 +1,1537 @@
+[0m11:46:15.369716 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017FD5E66730>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017FD8908BB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017FD8908E20>]}
+
+
+============================== 11:46:15.385345 | d6d88ece-d7e3-442d-8d09-c26c2ce0c159 ==============================
+[0m11:46:15.385345 [info ] [MainThread]: Running with dbt=1.8.4
+[0m11:46:15.385345 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\Dell\\.dbt', 'version_check': 'True', 'debug': 'False', 'log_path': 'C:\\Users\\Dell\\DBT_PROJECT\\dbt_fisrt_project\\logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'invocation_command': 'dbt debug', 'send_anonymous_usage_stats': 'True'}
+[0m11:46:15.420469 [info ] [MainThread]: dbt version: 1.8.4
+[0m11:46:15.420469 [info ] [MainThread]: python version: 3.9.9
+[0m11:46:15.436939 [info ] [MainThread]: python path: C:\Users\Dell\DBT_PROJECT\dbt-env\Scripts\python.exe
+[0m11:46:15.438940 [info ] [MainThread]: os info: Windows-10-10.0.19045-SP0
+[0m11:46:15.453043 [info ] [MainThread]: Error importing adapter: No module named 'dbt.adapters.snowflake'
+[0m11:46:15.453043 [info ] [MainThread]: Using profiles dir at C:\Users\Dell\.dbt
+[0m11:46:15.453043 [info ] [MainThread]: Using profiles.yml file at C:\Users\Dell\.dbt\profiles.yml
+[0m11:46:15.453043 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\Dell\DBT_PROJECT\dbt_fisrt_project\dbt_project.yml
+[0m11:46:15.598228 [info ] [MainThread]: Configuration:
+[0m11:46:15.598228 [info ] [MainThread]:   profiles.yml file [[31mERROR invalid[0m]
+[0m11:46:15.598228 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m11:46:15.598228 [info ] [MainThread]: Required dependencies:
+[0m11:46:15.613842 [debug] [MainThread]: Executing "git --help"
+[0m11:46:15.671644 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m11:46:15.671644 [debug] [MainThread]: STDERR: "b''"
+[0m11:46:15.671644 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m11:46:15.671644 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m11:46:15.671644 [info ] [MainThread]: [31m1 check failed:[0m
+[0m11:46:15.671644 [info ] [MainThread]: Profile loading failed for the following reason:
+Runtime Error
+  Credentials in profile "dbt_fisrt_project", target "dev" invalid: Runtime Error
+    Could not find adapter type snowflake!
+
+
+[0m11:46:15.671644 [debug] [MainThread]: Command `dbt debug` failed at 11:46:15.671644 after 0.40 seconds
+[0m11:46:15.684151 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017FD5E66730>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017FD67959A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017FD685D8E0>]}
+[0m11:46:15.684151 [debug] [MainThread]: Flushing usage events
+[0m11:49:53.974340 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025478FA7730>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002547BA3BBB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002547BA3BE20>]}
+
+
+============================== 11:49:53.974340 | 3bb79750-ce6e-4b4e-b1be-d8fac87f5a01 ==============================
+[0m11:49:53.974340 [info ] [MainThread]: Running with dbt=1.8.4
+[0m11:49:53.989998 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\Dell\\.dbt', 'version_check': 'True', 'warn_error': 'None', 'log_path': 'C:\\Users\\Dell\\DBT_PROJECT\\dbt_fisrt_project\\logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'introspect': 'True', 'invocation_command': 'dbt debug', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m11:49:54.015832 [info ] [MainThread]: dbt version: 1.8.4
+[0m11:49:54.032283 [info ] [MainThread]: python version: 3.9.9
+[0m11:49:54.032283 [info ] [MainThread]: python path: C:\Users\Dell\DBT_PROJECT\dbt-env\Scripts\python.exe
+[0m11:49:54.032283 [info ] [MainThread]: os info: Windows-10-10.0.19045-SP0
+[0m11:49:54.032283 [info ] [MainThread]: Error importing adapter: No module named 'dbt.adapters.snowflake'
+[0m11:49:54.049276 [info ] [MainThread]: Using profiles dir at C:\Users\Dell\.dbt
+[0m11:49:54.051276 [info ] [MainThread]: Using profiles.yml file at C:\Users\Dell\.dbt\profiles.yml
+[0m11:49:54.053278 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\Dell\DBT_PROJECT\dbt_fisrt_project\dbt_project.yml
+[0m11:49:54.195166 [info ] [MainThread]: Configuration:
+[0m11:49:54.195166 [info ] [MainThread]:   profiles.yml file [[31mERROR invalid[0m]
+[0m11:49:54.195166 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m11:49:54.195166 [info ] [MainThread]: Required dependencies:
+[0m11:49:54.210791 [debug] [MainThread]: Executing "git --help"
+[0m11:49:54.270317 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m11:49:54.270317 [debug] [MainThread]: STDERR: "b''"
+[0m11:49:54.270317 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m11:49:54.270317 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m11:49:54.270317 [info ] [MainThread]: [31m1 check failed:[0m
+[0m11:49:54.270317 [info ] [MainThread]: Profile loading failed for the following reason:
+Runtime Error
+  Credentials in profile "dbt_fisrt_project", target "dev" invalid: Runtime Error
+    Could not find adapter type snowflake!
+
+
+[0m11:49:54.282500 [debug] [MainThread]: Command `dbt debug` failed at 11:49:54.282500 after 0.40 seconds
+[0m11:49:54.282500 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025478FA7730>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000254798D79A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002547999E8E0>]}
+[0m11:49:54.282500 [debug] [MainThread]: Flushing usage events
+[0m11:50:42.525696 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025F39E98640>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025F3C938C10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025F3C938F40>]}
+
+
+============================== 11:50:42.525696 | 7f9a4908-eeca-4938-be18-151e9c64b0ef ==============================
+[0m11:50:42.525696 [info ] [MainThread]: Running with dbt=1.8.4
+[0m11:50:42.525696 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\Dell\\.dbt', 'log_path': 'C:\\Users\\Dell\\DBT_PROJECT\\dbt_fisrt_project\\logs', 'version_check': 'True', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'invocation_command': 'dbt debug', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m11:50:42.572782 [info ] [MainThread]: dbt version: 1.8.4
+[0m11:50:42.572782 [info ] [MainThread]: python version: 3.9.9
+[0m11:50:42.572782 [info ] [MainThread]: python path: C:\Users\Dell\DBT_PROJECT\dbt-env\Scripts\python.exe
+[0m11:50:42.584975 [info ] [MainThread]: os info: Windows-10-10.0.19045-SP0
+[0m11:50:42.585595 [info ] [MainThread]: Error importing adapter: No module named 'dbt.adapters.snowflake'
+[0m11:50:42.585595 [info ] [MainThread]: Using profiles dir at C:\Users\Dell\.dbt
+[0m11:50:42.585595 [info ] [MainThread]: Using profiles.yml file at C:\Users\Dell\.dbt\profiles.yml
+[0m11:50:42.601217 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\Dell\DBT_PROJECT\dbt_fisrt_project\dbt_project.yml
+[0m11:50:42.749563 [info ] [MainThread]: Configuration:
+[0m11:50:42.749563 [info ] [MainThread]:   profiles.yml file [[31mERROR invalid[0m]
+[0m11:50:42.749563 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m11:50:42.749563 [info ] [MainThread]: Required dependencies:
+[0m11:50:42.749563 [debug] [MainThread]: Executing "git --help"
+[0m11:50:42.819307 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m11:50:42.820659 [debug] [MainThread]: STDERR: "b''"
+[0m11:50:42.820659 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m11:50:42.820659 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m11:50:42.820659 [info ] [MainThread]: [31m1 check failed:[0m
+[0m11:50:42.820659 [info ] [MainThread]: Profile loading failed for the following reason:
+Runtime Error
+  Credentials in profile "dbt_fisrt_project", target "dev" invalid: Runtime Error
+    Could not find adapter type snowflake!
+
+
+[0m11:50:42.820659 [debug] [MainThread]: Command `dbt debug` failed at 11:50:42.820659 after 0.40 seconds
+[0m11:50:42.820659 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025F39E98640>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025F3A77DC10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025F39CC4070>]}
+[0m11:50:42.820659 [debug] [MainThread]: Flushing usage events
+[0m11:53:29.413148 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000282C23048B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000282C4D9C520>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000282C4D9C2B0>]}
+
+
+============================== 11:53:29.413148 | 89e0ee5e-7afb-44bf-953c-70f5310757cb ==============================
+[0m11:53:29.413148 [info ] [MainThread]: Running with dbt=1.8.4
+[0m11:53:29.413148 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\Dell\\.dbt', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'C:\\Users\\Dell\\DBT_PROJECT\\dbt_fisrt_project\\logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'invocation_command': 'dbt debug', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m11:53:29.464118 [info ] [MainThread]: dbt version: 1.8.4
+[0m11:53:29.464118 [info ] [MainThread]: python version: 3.9.9
+[0m11:53:29.464118 [info ] [MainThread]: python path: C:\Users\Dell\DBT_PROJECT\dbt-env\Scripts\python.exe
+[0m11:53:29.464118 [info ] [MainThread]: os info: Windows-10-10.0.19045-SP0
+[0m11:53:32.642573 [info ] [MainThread]: Using profiles dir at C:\Users\Dell\.dbt
+[0m11:53:32.642573 [info ] [MainThread]: Using profiles.yml file at C:\Users\Dell\.dbt\profiles.yml
+[0m11:53:32.642573 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\Dell\DBT_PROJECT\dbt_fisrt_project\dbt_project.yml
+[0m11:53:32.658232 [info ] [MainThread]: adapter type: snowflake
+[0m11:53:32.658232 [info ] [MainThread]: adapter version: 1.8.3
+[0m11:53:32.827106 [info ] [MainThread]: Configuration:
+[0m11:53:32.829101 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m11:53:32.830084 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m11:53:32.830084 [info ] [MainThread]: Required dependencies:
+[0m11:53:32.830084 [debug] [MainThread]: Executing "git --help"
+[0m11:53:32.883033 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m11:53:32.883033 [debug] [MainThread]: STDERR: "b''"
+[0m11:53:32.883033 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m11:53:32.883033 [info ] [MainThread]: Connection:
+[0m11:53:32.883033 [info ] [MainThread]:   account: cx26056.eu-central-1
+[0m11:53:32.898002 [info ] [MainThread]:   user: lirany
+[0m11:53:32.900003 [info ] [MainThread]:   database: AIRBNB_LIRAN
+[0m11:53:32.902001 [info ] [MainThread]:   warehouse: COMPUTE_WH
+[0m11:53:32.903777 [info ] [MainThread]:   role: ACCOUNTADMIN
+[0m11:53:32.903777 [info ] [MainThread]:   schema: DEV
+[0m11:53:32.903777 [info ] [MainThread]:   authenticator: None
+[0m11:53:32.903777 [info ] [MainThread]:   oauth_client_id: None
+[0m11:53:32.903777 [info ] [MainThread]:   query_tag: None
+[0m11:53:32.903777 [info ] [MainThread]:   client_session_keep_alive: False
+[0m11:53:32.916383 [info ] [MainThread]:   host: None
+[0m11:53:32.917692 [info ] [MainThread]:   port: None
+[0m11:53:32.917692 [info ] [MainThread]:   proxy_host: None
+[0m11:53:32.917692 [info ] [MainThread]:   proxy_port: None
+[0m11:53:32.917692 [info ] [MainThread]:   protocol: None
+[0m11:53:32.917692 [info ] [MainThread]:   connect_retries: 1
+[0m11:53:32.917692 [info ] [MainThread]:   connect_timeout: None
+[0m11:53:32.917692 [info ] [MainThread]:   retry_on_database_errors: False
+[0m11:53:32.930980 [info ] [MainThread]:   retry_all: False
+[0m11:53:32.933978 [info ] [MainThread]:   insecure_mode: False
+[0m11:53:32.934698 [info ] [MainThread]:   reuse_connections: None
+[0m11:53:32.934698 [info ] [MainThread]: Registered adapter: snowflake=1.8.3
+[0m11:53:32.934698 [debug] [MainThread]: Acquiring new snowflake connection 'debug'
+[0m11:53:32.934698 [debug] [MainThread]: Using snowflake connection "debug"
+[0m11:53:32.934698 [debug] [MainThread]: On debug: select 1 as id
+[0m11:53:32.934698 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m11:53:34.199772 [debug] [MainThread]: SQL status: SUCCESS 1 in 1.261 seconds
+[0m11:53:34.199772 [debug] [MainThread]: On debug: Close
+[0m11:53:34.454764 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m11:53:34.470339 [info ] [MainThread]: [32mAll checks passed![0m
+[0m11:53:34.470339 [debug] [MainThread]: Command `dbt debug` succeeded at 11:53:34.470339 after 5.20 seconds
+[0m11:53:34.470339 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m11:53:34.470339 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000282C23048B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000282C2C85E20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000282C5B2E310>]}
+[0m11:53:34.470339 [debug] [MainThread]: Flushing usage events
+[0m11:58:56.239732 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024AB48038E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024AB72A0730>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024AB72A04C0>]}
+
+
+============================== 11:58:56.239732 | ec1df2e1-5de0-4917-9fdc-85ce1977abfe ==============================
+[0m11:58:56.239732 [info ] [MainThread]: Running with dbt=1.8.4
+[0m11:58:56.239732 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\Dell\\.dbt', 'fail_fast': 'False', 'warn_error': 'None', 'log_path': 'C:\\Users\\Dell\\DBT_PROJECT\\dbt_fisrt_project\\logs', 'debug': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt run --select V_AGG_PRICE_BY_NAME', 'send_anonymous_usage_stats': 'True'}
+[0m11:58:57.089787 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'ec1df2e1-5de0-4917-9fdc-85ce1977abfe', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024AB711CAF0>]}
+[0m11:58:57.149235 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'ec1df2e1-5de0-4917-9fdc-85ce1977abfe', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024AB7F9AEB0>]}
+[0m11:58:57.164860 [info ] [MainThread]: Registered adapter: snowflake=1.8.3
+[0m11:58:57.186654 [debug] [MainThread]: checksum: 54398663eddc8e4ac172fdab397e09b2aa6984947a84e6ec7983096c3fae7b7a, vars: {}, profile: , target: , version: 1.8.4
+[0m11:58:57.186654 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m11:58:57.186654 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'ec1df2e1-5de0-4917-9fdc-85ce1977abfe', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024AB800D880>]}
+[0m11:59:00.018137 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'ec1df2e1-5de0-4917-9fdc-85ce1977abfe', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024AB9503130>]}
+[0m11:59:00.221288 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'ec1df2e1-5de0-4917-9fdc-85ce1977abfe', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024AB955F0A0>]}
+[0m11:59:00.221288 [info ] [MainThread]: Found 3 models, 4 data tests, 448 macros
+[0m11:59:00.221288 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'ec1df2e1-5de0-4917-9fdc-85ce1977abfe', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024AB9524700>]}
+[0m11:59:00.221288 [info ] [MainThread]: 
+[0m11:59:00.221288 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m11:59:00.221288 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_AIRBNB_LIRAN'
+[0m11:59:00.257526 [debug] [ThreadPool]: Using snowflake connection "list_AIRBNB_LIRAN"
+[0m11:59:00.258780 [debug] [ThreadPool]: On list_AIRBNB_LIRAN: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "dbt_fisrt_project", "target_name": "dev", "connection_name": "list_AIRBNB_LIRAN"} */
+show terse schemas in database AIRBNB_LIRAN
+    limit 10000
+[0m11:59:00.258780 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:59:01.588776 [debug] [ThreadPool]: SQL status: SUCCESS 4 in 1.336 seconds
+[0m11:59:01.604415 [debug] [ThreadPool]: On list_AIRBNB_LIRAN: Close
+[0m11:59:01.840340 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_AIRBNB_LIRAN_DEV'
+[0m11:59:01.864042 [debug] [ThreadPool]: Using snowflake connection "list_AIRBNB_LIRAN_DEV"
+[0m11:59:01.865031 [debug] [ThreadPool]: On list_AIRBNB_LIRAN_DEV: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "dbt_fisrt_project", "target_name": "dev", "connection_name": "list_AIRBNB_LIRAN_DEV"} */
+show objects in AIRBNB_LIRAN.DEV limit 10000
+[0m11:59:01.866035 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:59:02.955657 [debug] [ThreadPool]: SQL status: SUCCESS 7 in 1.091 seconds
+[0m11:59:02.971218 [debug] [ThreadPool]: On list_AIRBNB_LIRAN_DEV: Close
+[0m11:59:03.174392 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'ec1df2e1-5de0-4917-9fdc-85ce1977abfe', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024AB7A58820>]}
+[0m11:59:03.189968 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m11:59:03.189968 [info ] [MainThread]: 
+[0m11:59:03.219097 [debug] [Thread-1  ]: Began running node model.dbt_fisrt_project.V_AGG_PRICE_BY_NAME
+[0m11:59:03.222388 [info ] [Thread-1  ]: 1 of 1 START sql view model DEV.V_AGG_PRICE_BY_NAME ............................ [RUN]
+[0m11:59:03.222388 [debug] [Thread-1  ]: Acquiring new snowflake connection 'model.dbt_fisrt_project.V_AGG_PRICE_BY_NAME'
+[0m11:59:03.222388 [debug] [Thread-1  ]: Began compiling node model.dbt_fisrt_project.V_AGG_PRICE_BY_NAME
+[0m11:59:03.258583 [debug] [Thread-1  ]: Writing injected SQL for node "model.dbt_fisrt_project.V_AGG_PRICE_BY_NAME"
+[0m11:59:03.258583 [debug] [Thread-1  ]: Began executing node model.dbt_fisrt_project.V_AGG_PRICE_BY_NAME
+[0m11:59:03.369074 [debug] [Thread-1  ]: Writing runtime sql for node "model.dbt_fisrt_project.V_AGG_PRICE_BY_NAME"
+[0m11:59:03.369074 [debug] [Thread-1  ]: Using snowflake connection "model.dbt_fisrt_project.V_AGG_PRICE_BY_NAME"
+[0m11:59:03.369074 [debug] [Thread-1  ]: On model.dbt_fisrt_project.V_AGG_PRICE_BY_NAME: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "dbt_fisrt_project", "target_name": "dev", "node_id": "model.dbt_fisrt_project.V_AGG_PRICE_BY_NAME"} */
+create or replace   view AIRBNB_LIRAN.DEV.V_AGG_PRICE_BY_NAME
+  
+   as (
+    wirh agg as(
+
+    select name,sum(price) as price   from AIRBNB_LIRAN.RAW.RAW_LISTINGS group by name
+
+)
+
+select * from agg
+  );
+[0m11:59:03.369074 [debug] [Thread-1  ]: Opening a new connection, currently in state init
+[0m11:59:04.364214 [debug] [Thread-1  ]: Snowflake adapter: Snowflake query id: 01b62a3b-0202-e6c8-0001-e78e001ac24a
+[0m11:59:04.364214 [debug] [Thread-1  ]: Snowflake adapter: Snowflake error: 001003 (42000): SQL compilation error:
+syntax error line 4 at position 4 unexpected 'wirh'.
+syntax error line 5 at position 27 unexpected 'as'.
+[0m11:59:04.364214 [debug] [Thread-1  ]: On model.dbt_fisrt_project.V_AGG_PRICE_BY_NAME: Close
+[0m11:59:04.616598 [debug] [Thread-1  ]: Database Error in model V_AGG_PRICE_BY_NAME (models\example\V_AGG_PRICE_BY_NAME.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 4 at position 4 unexpected 'wirh'.
+  syntax error line 5 at position 27 unexpected 'as'.
+  compiled Code at target\run\dbt_fisrt_project\models\example\V_AGG_PRICE_BY_NAME.sql
+[0m11:59:04.632262 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'ec1df2e1-5de0-4917-9fdc-85ce1977abfe', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024AB98B60A0>]}
+[0m11:59:04.632262 [error] [Thread-1  ]: 1 of 1 ERROR creating sql view model DEV.V_AGG_PRICE_BY_NAME ................... [[31mERROR[0m in 1.41s]
+[0m11:59:04.632262 [debug] [Thread-1  ]: Finished running node model.dbt_fisrt_project.V_AGG_PRICE_BY_NAME
+[0m11:59:04.632262 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m11:59:04.632262 [debug] [MainThread]: Connection 'list_AIRBNB_LIRAN' was properly closed.
+[0m11:59:04.632262 [debug] [MainThread]: Connection 'list_AIRBNB_LIRAN_DEV' was properly closed.
+[0m11:59:04.649216 [debug] [MainThread]: Connection 'model.dbt_fisrt_project.V_AGG_PRICE_BY_NAME' was properly closed.
+[0m11:59:04.651228 [info ] [MainThread]: 
+[0m11:59:04.653753 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 4.43 seconds (4.43s).
+[0m11:59:04.656753 [debug] [MainThread]: Command end result
+[0m11:59:04.704980 [info ] [MainThread]: 
+[0m11:59:04.704980 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m11:59:04.704980 [info ] [MainThread]: 
+[0m11:59:04.704980 [error] [MainThread]:   Database Error in model V_AGG_PRICE_BY_NAME (models\example\V_AGG_PRICE_BY_NAME.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 4 at position 4 unexpected 'wirh'.
+  syntax error line 5 at position 27 unexpected 'as'.
+  compiled Code at target\run\dbt_fisrt_project\models\example\V_AGG_PRICE_BY_NAME.sql
+[0m11:59:04.720800 [info ] [MainThread]: 
+[0m11:59:04.723797 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 TOTAL=1
+[0m11:59:04.726838 [debug] [MainThread]: Command `dbt run` failed at 11:59:04.726838 after 8.58 seconds
+[0m11:59:04.727831 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024AB48038E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024AB83B4400>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024AB83B43D0>]}
+[0m11:59:04.729798 [debug] [MainThread]: Flushing usage events
+[0m11:59:24.978193 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D75CE54880>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D75F8F06A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D75F8F0430>]}
+
+
+============================== 11:59:24.993819 | a7d0c693-db70-49b5-97fc-3fb5c978a08d ==============================
+[0m11:59:24.993819 [info ] [MainThread]: Running with dbt=1.8.4
+[0m11:59:24.993819 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'C:\\Users\\Dell\\DBT_PROJECT\\dbt_fisrt_project\\logs', 'profiles_dir': 'C:\\Users\\Dell\\.dbt', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt run --select V_AGG_PRICE_BY_NAME', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m11:59:25.683440 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'a7d0c693-db70-49b5-97fc-3fb5c978a08d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D75D21DD60>]}
+[0m11:59:25.761565 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'a7d0c693-db70-49b5-97fc-3fb5c978a08d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D75F777100>]}
+[0m11:59:25.761565 [info ] [MainThread]: Registered adapter: snowflake=1.8.3
+[0m11:59:25.777182 [debug] [MainThread]: checksum: 54398663eddc8e4ac172fdab397e09b2aa6984947a84e6ec7983096c3fae7b7a, vars: {}, profile: , target: , version: 1.8.4
+[0m11:59:26.044983 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m11:59:26.044983 [debug] [MainThread]: Partial parsing: updated file: dbt_fisrt_project://models\example\V_AGG_PRICE_BY_NAME.sql
+[0m11:59:26.433163 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'a7d0c693-db70-49b5-97fc-3fb5c978a08d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D7609E49A0>]}
+[0m11:59:26.578446 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'a7d0c693-db70-49b5-97fc-3fb5c978a08d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D760A4E490>]}
+[0m11:59:26.594072 [info ] [MainThread]: Found 3 models, 4 data tests, 448 macros
+[0m11:59:26.594072 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'a7d0c693-db70-49b5-97fc-3fb5c978a08d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D760900970>]}
+[0m11:59:26.594072 [info ] [MainThread]: 
+[0m11:59:26.594072 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m11:59:26.604697 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_AIRBNB_LIRAN'
+[0m11:59:26.622877 [debug] [ThreadPool]: Using snowflake connection "list_AIRBNB_LIRAN"
+[0m11:59:26.622877 [debug] [ThreadPool]: On list_AIRBNB_LIRAN: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "dbt_fisrt_project", "target_name": "dev", "connection_name": "list_AIRBNB_LIRAN"} */
+show terse schemas in database AIRBNB_LIRAN
+    limit 10000
+[0m11:59:26.622877 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:59:27.774616 [debug] [ThreadPool]: SQL status: SUCCESS 4 in 1.152 seconds
+[0m11:59:27.774616 [debug] [ThreadPool]: On list_AIRBNB_LIRAN: Close
+[0m11:59:28.021431 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_AIRBNB_LIRAN_DEV'
+[0m11:59:28.052728 [debug] [ThreadPool]: Using snowflake connection "list_AIRBNB_LIRAN_DEV"
+[0m11:59:28.052728 [debug] [ThreadPool]: On list_AIRBNB_LIRAN_DEV: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "dbt_fisrt_project", "target_name": "dev", "connection_name": "list_AIRBNB_LIRAN_DEV"} */
+show objects in AIRBNB_LIRAN.DEV limit 10000
+[0m11:59:28.052728 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:59:29.058216 [debug] [ThreadPool]: SQL status: SUCCESS 7 in 1.007 seconds
+[0m11:59:29.077133 [debug] [ThreadPool]: On list_AIRBNB_LIRAN_DEV: Close
+[0m11:59:29.323138 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'a7d0c693-db70-49b5-97fc-3fb5c978a08d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D760A48220>]}
+[0m11:59:29.323138 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m11:59:29.323138 [info ] [MainThread]: 
+[0m11:59:29.323138 [debug] [Thread-1  ]: Began running node model.dbt_fisrt_project.V_AGG_PRICE_BY_NAME
+[0m11:59:29.323138 [info ] [Thread-1  ]: 1 of 1 START sql view model DEV.V_AGG_PRICE_BY_NAME ............................ [RUN]
+[0m11:59:29.340863 [debug] [Thread-1  ]: Acquiring new snowflake connection 'model.dbt_fisrt_project.V_AGG_PRICE_BY_NAME'
+[0m11:59:29.343835 [debug] [Thread-1  ]: Began compiling node model.dbt_fisrt_project.V_AGG_PRICE_BY_NAME
+[0m11:59:29.378200 [debug] [Thread-1  ]: Writing injected SQL for node "model.dbt_fisrt_project.V_AGG_PRICE_BY_NAME"
+[0m11:59:29.381184 [debug] [Thread-1  ]: Began executing node model.dbt_fisrt_project.V_AGG_PRICE_BY_NAME
+[0m11:59:29.439818 [debug] [Thread-1  ]: Writing runtime sql for node "model.dbt_fisrt_project.V_AGG_PRICE_BY_NAME"
+[0m11:59:29.439818 [debug] [Thread-1  ]: Using snowflake connection "model.dbt_fisrt_project.V_AGG_PRICE_BY_NAME"
+[0m11:59:29.439818 [debug] [Thread-1  ]: On model.dbt_fisrt_project.V_AGG_PRICE_BY_NAME: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "dbt_fisrt_project", "target_name": "dev", "node_id": "model.dbt_fisrt_project.V_AGG_PRICE_BY_NAME"} */
+create or replace   view AIRBNB_LIRAN.DEV.V_AGG_PRICE_BY_NAME
+  
+   as (
+    with agg as(
+
+    select name,sum(price) as price   from AIRBNB_LIRAN.RAW.RAW_LISTINGS group by name
+
+)
+
+select * from agg
+  );
+[0m11:59:29.455507 [debug] [Thread-1  ]: Opening a new connection, currently in state init
+[0m11:59:30.783207 [debug] [Thread-1  ]: SQL status: SUCCESS 1 in 1.328 seconds
+[0m11:59:30.850478 [debug] [Thread-1  ]: On model.dbt_fisrt_project.V_AGG_PRICE_BY_NAME: Close
+[0m11:59:31.062960 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a7d0c693-db70-49b5-97fc-3fb5c978a08d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D7605A2280>]}
+[0m11:59:31.065960 [info ] [Thread-1  ]: 1 of 1 OK created sql view model DEV.V_AGG_PRICE_BY_NAME ....................... [[32mSUCCESS 1[0m in 1.72s]
+[0m11:59:31.070632 [debug] [Thread-1  ]: Finished running node model.dbt_fisrt_project.V_AGG_PRICE_BY_NAME
+[0m11:59:31.078617 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m11:59:31.079924 [debug] [MainThread]: Connection 'list_AIRBNB_LIRAN' was properly closed.
+[0m11:59:31.080912 [debug] [MainThread]: Connection 'list_AIRBNB_LIRAN_DEV' was properly closed.
+[0m11:59:31.081904 [debug] [MainThread]: Connection 'model.dbt_fisrt_project.V_AGG_PRICE_BY_NAME' was properly closed.
+[0m11:59:31.082908 [info ] [MainThread]: 
+[0m11:59:31.084902 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 4.49 seconds (4.49s).
+[0m11:59:31.088006 [debug] [MainThread]: Command end result
+[0m11:59:31.173971 [info ] [MainThread]: 
+[0m11:59:31.173971 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m11:59:31.173971 [info ] [MainThread]: 
+[0m11:59:31.173971 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m11:59:31.173971 [debug] [MainThread]: Command `dbt run` succeeded at 11:59:31.173971 after 6.29 seconds
+[0m11:59:31.173971 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D75CE54880>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D7608E8670>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D75D354D90>]}
+[0m11:59:31.173971 [debug] [MainThread]: Flushing usage events
+[0m10:06:08.694338 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D9BDF052E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D9C0A1DB80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D9C0A1DDC0>]}
+
+
+============================== 10:06:08.694338 | 54ba0de4-9704-4637-a146-e3f37ac8e900 ==============================
+[0m10:06:08.694338 [info ] [MainThread]: Running with dbt=1.8.4
+[0m10:06:08.694338 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\Dell\\.dbt', 'fail_fast': 'False', 'warn_error': 'None', 'log_path': 'C:\\Users\\Dell\\DBT_PROJECT\\dbt_fisrt_project\\logs', 'debug': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'introspect': 'True', 'invocation_command': 'dbt snapshot --select DIM_SCD_Host', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m10:06:08.709966 [info ] [MainThread]: Error importing adapter: No module named 'dbt.adapters.snowflake'
+[0m10:06:08.718526 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Credentials in profile "dbt_fisrt_project", target "dev" invalid: Runtime Error
+    Could not find adapter type snowflake!
+[0m10:06:08.721327 [debug] [MainThread]: Command `dbt snapshot` failed at 10:06:08.721327 after 0.13 seconds
+[0m10:06:08.723332 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D9BDF052E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D9C09F6A30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D9C09F6040>]}
+[0m10:06:08.724363 [debug] [MainThread]: Flushing usage events
+[0m10:07:31.377334 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029C599B8400>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029C5C462C40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029C5C462E20>]}
+
+
+============================== 10:07:31.392973 | abc28a7c-ee13-461d-9ecc-54ec3121db92 ==============================
+[0m10:07:31.392973 [info ] [MainThread]: Running with dbt=1.8.4
+[0m10:07:31.392973 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\Dell\\.dbt', 'debug': 'False', 'warn_error': 'None', 'log_path': 'C:\\Users\\Dell\\DBT_PROJECT\\dbt_fisrt_project\\logs', 'fail_fast': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'invocation_command': 'dbt snapshot --select DIM_SCD_Host', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m10:07:34.936971 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'abc28a7c-ee13-461d-9ecc-54ec3121db92', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029C5C2F13D0>]}
+[0m10:07:35.015136 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'abc28a7c-ee13-461d-9ecc-54ec3121db92', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029C5D161880>]}
+[0m10:07:35.015136 [info ] [MainThread]: Registered adapter: snowflake=1.8.3
+[0m10:07:35.038027 [debug] [MainThread]: checksum: 54398663eddc8e4ac172fdab397e09b2aa6984947a84e6ec7983096c3fae7b7a, vars: {}, profile: , target: , version: 1.8.4
+[0m10:07:36.271442 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 2 files added, 0 files changed.
+[0m10:07:36.271442 [debug] [MainThread]: Partial parsing: added file: dbt_fisrt_project://snapshots\DIM_SCD_Host.sql
+[0m10:07:36.271442 [debug] [MainThread]: Partial parsing: added file: dbt_fisrt_project://models\example\Raw_host.sql
+[0m10:07:36.646434 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'abc28a7c-ee13-461d-9ecc-54ec3121db92', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029C5D56A130>]}
+[0m10:07:36.808896 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'abc28a7c-ee13-461d-9ecc-54ec3121db92', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029C5D3337C0>]}
+[0m10:07:36.808896 [info ] [MainThread]: Found 4 models, 4 data tests, 448 macros
+[0m10:07:36.808896 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'abc28a7c-ee13-461d-9ecc-54ec3121db92', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029C5D241A90>]}
+[0m10:07:36.808896 [warn ] [MainThread]: The selection criterion 'DIM_SCD_Host' does not match any enabled nodes
+[0m10:07:36.824498 [info ] [MainThread]: 
+[0m10:07:36.829029 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m10:07:36.831596 [debug] [MainThread]: Command end result
+[0m10:07:36.889367 [debug] [MainThread]: Command `dbt snapshot` succeeded at 10:07:36.889367 after 5.60 seconds
+[0m10:07:36.890373 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029C599B8400>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029C59ECCD30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029C5D1EACD0>]}
+[0m10:07:36.891396 [debug] [MainThread]: Flushing usage events
+[0m10:20:45.453802 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000011FBF836FA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000011FC2302B50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000011FC2302EE0>]}
+
+
+============================== 10:20:45.469472 | f9e43b57-ddaa-4521-9aaf-cfd8f99f851a ==============================
+[0m10:20:45.469472 [info ] [MainThread]: Running with dbt=1.8.4
+[0m10:20:45.469472 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'C:\\Users\\Dell\\DBT_PROJECT\\dbt_fisrt_project\\logs', 'profiles_dir': 'C:\\Users\\Dell\\.dbt', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'target_path': 'None', 'invocation_command': 'dbt snapshot --select DIM_SCD_Host', 'send_anonymous_usage_stats': 'True'}
+[0m10:20:46.220473 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'f9e43b57-ddaa-4521-9aaf-cfd8f99f851a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000011FC01E38E0>]}
+[0m10:20:46.329845 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'f9e43b57-ddaa-4521-9aaf-cfd8f99f851a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000011FC2102A00>]}
+[0m10:20:46.329845 [info ] [MainThread]: Registered adapter: snowflake=1.8.3
+[0m10:20:46.346588 [debug] [MainThread]: checksum: 54398663eddc8e4ac172fdab397e09b2aa6984947a84e6ec7983096c3fae7b7a, vars: {}, profile: , target: , version: 1.8.4
+[0m10:20:46.629887 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m10:20:46.629887 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m10:20:46.716225 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'f9e43b57-ddaa-4521-9aaf-cfd8f99f851a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000011FC3366130>]}
+[0m10:20:46.990343 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'f9e43b57-ddaa-4521-9aaf-cfd8f99f851a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000011FC33838B0>]}
+[0m10:20:46.990343 [info ] [MainThread]: Found 4 models, 4 data tests, 448 macros
+[0m10:20:46.990343 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'f9e43b57-ddaa-4521-9aaf-cfd8f99f851a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000011FC3366FA0>]}
+[0m10:20:46.990343 [warn ] [MainThread]: The selection criterion 'DIM_SCD_Host' does not match any enabled nodes
+[0m10:20:47.005968 [info ] [MainThread]: 
+[0m10:20:47.009911 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m10:20:47.017321 [debug] [MainThread]: Command end result
+[0m10:20:47.070244 [debug] [MainThread]: Command `dbt snapshot` succeeded at 10:20:47.069243 after 1.70 seconds
+[0m10:20:47.071244 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000011FBF836FA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000011FBFCB6130>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000011FC3374D60>]}
+[0m10:20:47.071244 [debug] [MainThread]: Flushing usage events
+[0m10:21:08.348078 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022636AE8400>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022637464B50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022639593D00>]}
+
+
+============================== 10:21:08.348078 | afa88808-b3e7-4cb0-81da-9c1453092cc7 ==============================
+[0m10:21:08.348078 [info ] [MainThread]: Running with dbt=1.8.4
+[0m10:21:08.348078 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'C:\\Users\\Dell\\DBT_PROJECT\\dbt_fisrt_project\\logs', 'profiles_dir': 'C:\\Users\\Dell\\.dbt', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt snapshot --select DIM_SCD_Host.sql', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m10:21:09.053342 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'afa88808-b3e7-4cb0-81da-9c1453092cc7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022636EC5E80>]}
+[0m10:21:09.115846 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'afa88808-b3e7-4cb0-81da-9c1453092cc7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002263A31A790>]}
+[0m10:21:09.115846 [info ] [MainThread]: Registered adapter: snowflake=1.8.3
+[0m10:21:09.131432 [debug] [MainThread]: checksum: 54398663eddc8e4ac172fdab397e09b2aa6984947a84e6ec7983096c3fae7b7a, vars: {}, profile: , target: , version: 1.8.4
+[0m10:21:09.383645 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m10:21:09.383645 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m10:21:09.446146 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'afa88808-b3e7-4cb0-81da-9c1453092cc7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002263A5F6130>]}
+[0m10:21:09.664856 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'afa88808-b3e7-4cb0-81da-9c1453092cc7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002263A613820>]}
+[0m10:21:09.664856 [info ] [MainThread]: Found 4 models, 4 data tests, 448 macros
+[0m10:21:09.664856 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'afa88808-b3e7-4cb0-81da-9c1453092cc7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002263A341CA0>]}
+[0m10:21:09.664856 [warn ] [MainThread]: The selection criterion 'DIM_SCD_Host.sql' does not match any enabled nodes
+[0m10:21:09.664856 [info ] [MainThread]: 
+[0m10:21:09.664856 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m10:21:09.682024 [debug] [MainThread]: Command end result
+[0m10:21:09.730342 [debug] [MainThread]: Command `dbt snapshot` succeeded at 10:21:09.729340 after 1.47 seconds
+[0m10:21:09.731308 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022636AE8400>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000226390D4820>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000226390C2A60>]}
+[0m10:21:09.732342 [debug] [MainThread]: Flushing usage events
+[0m10:23:01.077538 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002857B458400>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002857BDD4790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002857DED1130>]}
+
+
+============================== 10:23:01.093164 | b5f1a35c-62eb-4f8a-b793-3a62660ecc16 ==============================
+[0m10:23:01.093164 [info ] [MainThread]: Running with dbt=1.8.4
+[0m10:23:01.093164 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'C:\\Users\\Dell\\DBT_PROJECT\\dbt_fisrt_project\\logs', 'version_check': 'True', 'profiles_dir': 'C:\\Users\\Dell\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'invocation_command': 'dbt snapshot', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m10:23:01.829635 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'b5f1a35c-62eb-4f8a-b793-3a62660ecc16', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002857DCDE460>]}
+[0m10:23:01.892134 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'b5f1a35c-62eb-4f8a-b793-3a62660ecc16', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002857DD33F10>]}
+[0m10:23:01.908436 [info ] [MainThread]: Registered adapter: snowflake=1.8.3
+[0m10:23:01.924929 [debug] [MainThread]: checksum: 54398663eddc8e4ac172fdab397e09b2aa6984947a84e6ec7983096c3fae7b7a, vars: {}, profile: , target: , version: 1.8.4
+[0m10:23:02.156698 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m10:23:02.156698 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m10:23:02.219195 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'b5f1a35c-62eb-4f8a-b793-3a62660ecc16', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002857EF64130>]}
+[0m10:23:02.456795 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'b5f1a35c-62eb-4f8a-b793-3a62660ecc16', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002857EF82910>]}
+[0m10:23:02.457792 [info ] [MainThread]: Found 4 models, 4 data tests, 448 macros
+[0m10:23:02.459800 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'b5f1a35c-62eb-4f8a-b793-3a62660ecc16', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002857EF640A0>]}
+[0m10:23:02.461826 [info ] [MainThread]: 
+[0m10:23:02.462794 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m10:23:02.468556 [debug] [MainThread]: Command end result
+[0m10:23:02.519963 [debug] [MainThread]: Command `dbt snapshot` succeeded at 10:23:02.519963 after 1.55 seconds
+[0m10:23:02.519963 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002857B458400>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002857EF79B20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002857EF79970>]}
+[0m10:23:02.519963 [debug] [MainThread]: Flushing usage events
+[0m10:23:59.015023 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027D7E5284C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027D00FD1C70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027D00FD1E80>]}
+
+
+============================== 10:23:59.015023 | 3ac46db3-cf5d-4104-9323-f0c85db8a9e6 ==============================
+[0m10:23:59.015023 [info ] [MainThread]: Running with dbt=1.8.4
+[0m10:23:59.030647 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': 'C:\\Users\\Dell\\DBT_PROJECT\\dbt_fisrt_project\\logs', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\Dell\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'invocation_command': 'dbt snapshot', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m10:23:59.721372 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '3ac46db3-cf5d-4104-9323-f0c85db8a9e6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027D00FA1E50>]}
+[0m10:23:59.783912 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '3ac46db3-cf5d-4104-9323-f0c85db8a9e6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027D00B095E0>]}
+[0m10:23:59.783912 [info ] [MainThread]: Registered adapter: snowflake=1.8.3
+[0m10:23:59.799533 [debug] [MainThread]: checksum: 54398663eddc8e4ac172fdab397e09b2aa6984947a84e6ec7983096c3fae7b7a, vars: {}, profile: , target: , version: 1.8.4
+[0m10:24:00.075233 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m10:24:00.090860 [debug] [MainThread]: Partial parsing: updated file: dbt_fisrt_project://snapshots\DIM_SCD_Host.sql
+[0m10:24:00.270420 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '3ac46db3-cf5d-4104-9323-f0c85db8a9e6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027D01F6BA30>]}
+[0m10:24:00.426643 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '3ac46db3-cf5d-4104-9323-f0c85db8a9e6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027D00F7BC70>]}
+[0m10:24:00.426643 [info ] [MainThread]: Found 4 models, 4 data tests, 448 macros
+[0m10:24:00.426643 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '3ac46db3-cf5d-4104-9323-f0c85db8a9e6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027D02194D60>]}
+[0m10:24:00.442286 [info ] [MainThread]: 
+[0m10:24:00.442286 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m10:24:00.445407 [debug] [MainThread]: Command end result
+[0m10:24:00.490512 [debug] [MainThread]: Command `dbt snapshot` succeeded at 10:24:00.490512 after 1.57 seconds
+[0m10:24:00.490512 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027D7E5284C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027D00B00B20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027D7E9D6430>]}
+[0m10:24:00.490512 [debug] [MainThread]: Flushing usage events
+[0m10:24:40.635632 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000217C0D37460>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000217C37E6B80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000217C37E6F10>]}
+
+
+============================== 10:24:40.651238 | 09f98a29-3ac9-4bcb-94b9-40cb547f5d3b ==============================
+[0m10:24:40.651238 [info ] [MainThread]: Running with dbt=1.8.4
+[0m10:24:40.651238 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\Dell\\.dbt', 'debug': 'False', 'version_check': 'True', 'log_path': 'C:\\Users\\Dell\\DBT_PROJECT\\dbt_fisrt_project\\logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt snapshot', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m10:24:41.433528 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '09f98a29-3ac9-4bcb-94b9-40cb547f5d3b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000217C44CA460>]}
+[0m10:24:41.511693 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '09f98a29-3ac9-4bcb-94b9-40cb547f5d3b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000217C3312910>]}
+[0m10:24:41.511693 [info ] [MainThread]: Registered adapter: snowflake=1.8.3
+[0m10:24:41.530169 [debug] [MainThread]: checksum: 54398663eddc8e4ac172fdab397e09b2aa6984947a84e6ec7983096c3fae7b7a, vars: {}, profile: , target: , version: 1.8.4
+[0m10:24:41.780444 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m10:24:41.780444 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m10:24:41.842949 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '09f98a29-3ac9-4bcb-94b9-40cb547f5d3b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000217C4844130>]}
+[0m10:24:42.061704 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '09f98a29-3ac9-4bcb-94b9-40cb547f5d3b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000217C4862A30>]}
+[0m10:24:42.061704 [info ] [MainThread]: Found 4 models, 4 data tests, 448 macros
+[0m10:24:42.061704 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '09f98a29-3ac9-4bcb-94b9-40cb547f5d3b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000217C4862340>]}
+[0m10:24:42.061704 [info ] [MainThread]: 
+[0m10:24:42.061704 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m10:24:42.079758 [debug] [MainThread]: Command end result
+[0m10:24:42.126676 [debug] [MainThread]: Command `dbt snapshot` succeeded at 10:24:42.126676 after 1.58 seconds
+[0m10:24:42.126676 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000217C0D37460>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000217C4859130>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000217C4859670>]}
+[0m10:24:42.126676 [debug] [MainThread]: Flushing usage events
+[0m10:25:55.156335 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F5DCE17400>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F5DD794790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F5DF891130>]}
+
+
+============================== 10:25:55.171958 | ce096a41-5ebc-4683-8015-22dc3318aede ==============================
+[0m10:25:55.171958 [info ] [MainThread]: Running with dbt=1.8.4
+[0m10:25:55.171958 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\Dell\\.dbt', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'C:\\Users\\Dell\\DBT_PROJECT\\dbt_fisrt_project\\logs', 'warn_error': 'None', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'invocation_command': 'dbt snapshot', 'log_format': 'default', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m10:25:56.012579 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'ce096a41-5ebc-4683-8015-22dc3318aede', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F5DF6AD460>]}
+[0m10:25:56.090748 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'ce096a41-5ebc-4683-8015-22dc3318aede', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F5DF6F5F10>]}
+[0m10:25:56.090748 [info ] [MainThread]: Registered adapter: snowflake=1.8.3
+[0m10:25:56.113490 [debug] [MainThread]: checksum: 54398663eddc8e4ac172fdab397e09b2aa6984947a84e6ec7983096c3fae7b7a, vars: {}, profile: , target: , version: 1.8.4
+[0m10:25:56.393226 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m10:25:56.393226 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m10:25:56.466909 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'ce096a41-5ebc-4683-8015-22dc3318aede', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F5E0924130>]}
+[0m10:25:56.697163 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'ce096a41-5ebc-4683-8015-22dc3318aede', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F5E0942910>]}
+[0m10:25:56.699164 [info ] [MainThread]: Found 4 models, 4 data tests, 448 macros
+[0m10:25:56.701163 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'ce096a41-5ebc-4683-8015-22dc3318aede', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F5E09240A0>]}
+[0m10:25:56.703164 [info ] [MainThread]: 
+[0m10:25:56.704163 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m10:25:56.708894 [debug] [MainThread]: Command end result
+[0m10:25:56.753083 [debug] [MainThread]: Command `dbt snapshot` succeeded at 10:25:56.753083 after 1.69 seconds
+[0m10:25:56.753083 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F5DCE17400>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F5E0939B20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F5E0939970>]}
+[0m10:25:56.753083 [debug] [MainThread]: Flushing usage events
+[0m10:27:52.091490 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D5E46D8400>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D5E7186B20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D5E7186EE0>]}
+
+
+============================== 10:27:52.091490 | 23bdfeb6-1178-4082-ad3e-50827e12aa77 ==============================
+[0m10:27:52.091490 [info ] [MainThread]: Running with dbt=1.8.4
+[0m10:27:52.091490 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'C:\\Users\\Dell\\DBT_PROJECT\\dbt_fisrt_project\\logs', 'profiles_dir': 'C:\\Users\\Dell\\.dbt', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt snapshot', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m10:27:52.787891 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '23bdfeb6-1178-4082-ad3e-50827e12aa77', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D5E7EA5F40>]}
+[0m10:27:52.866014 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '23bdfeb6-1178-4082-ad3e-50827e12aa77', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D5E71014F0>]}
+[0m10:27:52.866014 [info ] [MainThread]: Registered adapter: snowflake=1.8.3
+[0m10:27:52.888822 [debug] [MainThread]: checksum: 54398663eddc8e4ac172fdab397e09b2aa6984947a84e6ec7983096c3fae7b7a, vars: {}, profile: , target: , version: 1.8.4
+[0m10:27:53.125930 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m10:27:53.125930 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m10:27:53.188428 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '23bdfeb6-1178-4082-ad3e-50827e12aa77', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D5E81E4130>]}
+[0m10:27:53.407177 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '23bdfeb6-1178-4082-ad3e-50827e12aa77', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D5E8203940>]}
+[0m10:27:53.407177 [info ] [MainThread]: Found 4 models, 4 data tests, 448 macros
+[0m10:27:53.407177 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '23bdfeb6-1178-4082-ad3e-50827e12aa77', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D5E81E42B0>]}
+[0m10:27:53.407177 [info ] [MainThread]: 
+[0m10:27:53.422768 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m10:27:53.430403 [debug] [MainThread]: Command end result
+[0m10:27:53.482060 [debug] [MainThread]: Command `dbt snapshot` succeeded at 10:27:53.481081 after 1.49 seconds
+[0m10:27:53.483060 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D5E46D8400>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D5E6CC3820>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D5E81771C0>]}
+[0m10:27:53.483060 [debug] [MainThread]: Flushing usage events
+[0m10:28:33.464058 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001991DB47490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000199205F1B50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000199205F1F70>]}
+
+
+============================== 10:28:33.464058 | feaa4755-aaf1-4a1f-9b55-4e907b1f4449 ==============================
+[0m10:28:33.464058 [info ] [MainThread]: Running with dbt=1.8.4
+[0m10:28:33.479683 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'C:\\Users\\Dell\\DBT_PROJECT\\dbt_fisrt_project\\logs', 'debug': 'False', 'profiles_dir': 'C:\\Users\\Dell\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt run', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m10:28:34.185959 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'feaa4755-aaf1-4a1f-9b55-4e907b1f4449', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019920AA5C10>]}
+[0m10:28:34.248492 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'feaa4755-aaf1-4a1f-9b55-4e907b1f4449', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019921308F40>]}
+[0m10:28:34.248492 [info ] [MainThread]: Registered adapter: snowflake=1.8.3
+[0m10:28:34.264074 [debug] [MainThread]: checksum: 54398663eddc8e4ac172fdab397e09b2aa6984947a84e6ec7983096c3fae7b7a, vars: {}, profile: , target: , version: 1.8.4
+[0m10:28:34.606507 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m10:28:34.606507 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m10:28:34.673677 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'feaa4755-aaf1-4a1f-9b55-4e907b1f4449', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019921653130>]}
+[0m10:28:34.892427 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'feaa4755-aaf1-4a1f-9b55-4e907b1f4449', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019921657340>]}
+[0m10:28:34.892427 [info ] [MainThread]: Found 4 models, 4 data tests, 448 macros
+[0m10:28:34.892427 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'feaa4755-aaf1-4a1f-9b55-4e907b1f4449', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019921672640>]}
+[0m10:28:34.892427 [info ] [MainThread]: 
+[0m10:28:34.892427 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m10:28:34.908048 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_AIRBNB_LIRAN'
+[0m10:28:34.930127 [debug] [ThreadPool]: Using snowflake connection "list_AIRBNB_LIRAN"
+[0m10:28:34.930127 [debug] [ThreadPool]: On list_AIRBNB_LIRAN: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "dbt_fisrt_project", "target_name": "dev", "connection_name": "list_AIRBNB_LIRAN"} */
+show terse schemas in database AIRBNB_LIRAN
+    limit 10000
+[0m10:28:34.930127 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m10:28:36.288290 [debug] [ThreadPool]: SQL status: SUCCESS 4 in 1.361 seconds
+[0m10:28:36.288290 [debug] [ThreadPool]: On list_AIRBNB_LIRAN: Close
+[0m10:28:36.538288 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_AIRBNB_LIRAN_DEV'
+[0m10:28:36.553912 [debug] [ThreadPool]: Using snowflake connection "list_AIRBNB_LIRAN_DEV"
+[0m10:28:36.553912 [debug] [ThreadPool]: On list_AIRBNB_LIRAN_DEV: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "dbt_fisrt_project", "target_name": "dev", "connection_name": "list_AIRBNB_LIRAN_DEV"} */
+show objects in AIRBNB_LIRAN.DEV limit 10000
+[0m10:28:36.553912 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m10:28:37.780036 [debug] [ThreadPool]: SQL status: SUCCESS 8 in 1.218 seconds
+[0m10:28:37.780036 [debug] [ThreadPool]: On list_AIRBNB_LIRAN_DEV: Close
+[0m10:28:38.012750 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'feaa4755-aaf1-4a1f-9b55-4e907b1f4449', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001991DF75250>]}
+[0m10:28:38.012750 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m10:28:38.028335 [info ] [MainThread]: 
+[0m10:28:38.051735 [debug] [Thread-1  ]: Began running node model.dbt_fisrt_project.Raw_host
+[0m10:28:38.058169 [debug] [Thread-3  ]: Began running node model.dbt_fisrt_project.my_first_dbt_model
+[0m10:28:38.051735 [debug] [Thread-2  ]: Began running node model.dbt_fisrt_project.V_AGG_PRICE_BY_NAME
+[0m10:28:38.058169 [info ] [Thread-1  ]: 1 of 4 START sql view model DEV.Raw_host ....................................... [RUN]
+[0m10:28:38.058169 [info ] [Thread-3  ]: 3 of 4 START sql table model DEV.my_first_dbt_model ............................ [RUN]
+[0m10:28:38.058169 [info ] [Thread-2  ]: 2 of 4 START sql view model DEV.V_AGG_PRICE_BY_NAME ............................ [RUN]
+[0m10:28:38.058169 [debug] [Thread-1  ]: Acquiring new snowflake connection 'model.dbt_fisrt_project.Raw_host'
+[0m10:28:38.058169 [debug] [Thread-3  ]: Acquiring new snowflake connection 'model.dbt_fisrt_project.my_first_dbt_model'
+[0m10:28:38.075697 [debug] [Thread-2  ]: Acquiring new snowflake connection 'model.dbt_fisrt_project.V_AGG_PRICE_BY_NAME'
+[0m10:28:38.075697 [debug] [Thread-1  ]: Began compiling node model.dbt_fisrt_project.Raw_host
+[0m10:28:38.075697 [debug] [Thread-3  ]: Began compiling node model.dbt_fisrt_project.my_first_dbt_model
+[0m10:28:38.075697 [debug] [Thread-2  ]: Began compiling node model.dbt_fisrt_project.V_AGG_PRICE_BY_NAME
+[0m10:28:38.091544 [debug] [Thread-1  ]: Writing injected SQL for node "model.dbt_fisrt_project.Raw_host"
+[0m10:28:38.091544 [debug] [Thread-3  ]: Writing injected SQL for node "model.dbt_fisrt_project.my_first_dbt_model"
+[0m10:28:38.107857 [debug] [Thread-2  ]: Writing injected SQL for node "model.dbt_fisrt_project.V_AGG_PRICE_BY_NAME"
+[0m10:28:38.107857 [debug] [Thread-2  ]: Began executing node model.dbt_fisrt_project.V_AGG_PRICE_BY_NAME
+[0m10:28:38.107857 [debug] [Thread-3  ]: Began executing node model.dbt_fisrt_project.my_first_dbt_model
+[0m10:28:38.125171 [debug] [Thread-1  ]: Began executing node model.dbt_fisrt_project.Raw_host
+[0m10:28:38.175832 [debug] [Thread-2  ]: Writing runtime sql for node "model.dbt_fisrt_project.V_AGG_PRICE_BY_NAME"
+[0m10:28:38.190939 [debug] [Thread-3  ]: Writing runtime sql for node "model.dbt_fisrt_project.my_first_dbt_model"
+[0m10:28:38.206566 [debug] [Thread-1  ]: Writing runtime sql for node "model.dbt_fisrt_project.Raw_host"
+[0m10:28:38.206566 [debug] [Thread-3  ]: Using snowflake connection "model.dbt_fisrt_project.my_first_dbt_model"
+[0m10:28:38.206566 [debug] [Thread-2  ]: Using snowflake connection "model.dbt_fisrt_project.V_AGG_PRICE_BY_NAME"
+[0m10:28:38.206566 [debug] [Thread-3  ]: On model.dbt_fisrt_project.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "dbt_fisrt_project", "target_name": "dev", "node_id": "model.dbt_fisrt_project.my_first_dbt_model"} */
+create or replace transient table AIRBNB_LIRAN.DEV.my_first_dbt_model
+         as
+        (/*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+with source_data as (
+
+    select 1 as id
+    union all
+    select null as id
+
+)
+
+select *
+from source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+        );
+[0m10:28:38.206566 [debug] [Thread-1  ]: Using snowflake connection "model.dbt_fisrt_project.Raw_host"
+[0m10:28:38.206566 [debug] [Thread-2  ]: On model.dbt_fisrt_project.V_AGG_PRICE_BY_NAME: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "dbt_fisrt_project", "target_name": "dev", "node_id": "model.dbt_fisrt_project.V_AGG_PRICE_BY_NAME"} */
+create or replace   view AIRBNB_LIRAN.DEV.V_AGG_PRICE_BY_NAME
+  
+   as (
+    with agg as(
+    select name,sum(price) as price   from AIRBNB_LIRAN.RAW.RAW_LISTINGS group by name
+)
+select * from agg
+  );
+[0m10:28:38.206566 [debug] [Thread-3  ]: Opening a new connection, currently in state init
+[0m10:28:38.206566 [debug] [Thread-1  ]: On model.dbt_fisrt_project.Raw_host: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "dbt_fisrt_project", "target_name": "dev", "node_id": "model.dbt_fisrt_project.Raw_host"} */
+create or replace   view AIRBNB_LIRAN.DEV.Raw_host
+  
+   as (
+    with HOST as 
+(
+select * from AIRBNB_LIRAN.RAW.RAW_HOSTS
+)
+select * from HOST
+  );
+[0m10:28:38.222190 [debug] [Thread-2  ]: Opening a new connection, currently in state init
+[0m10:28:38.222190 [debug] [Thread-1  ]: Opening a new connection, currently in state init
+[0m10:28:39.721907 [debug] [Thread-1  ]: SQL status: SUCCESS 1 in 1.501 seconds
+[0m10:28:39.800016 [debug] [Thread-1  ]: On model.dbt_fisrt_project.Raw_host: Close
+[0m10:28:39.800016 [debug] [Thread-2  ]: SQL status: SUCCESS 1 in 1.590 seconds
+[0m10:28:39.815679 [debug] [Thread-2  ]: On model.dbt_fisrt_project.V_AGG_PRICE_BY_NAME: Close
+[0m10:28:40.020291 [debug] [Thread-2  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'feaa4755-aaf1-4a1f-9b55-4e907b1f4449', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019921948040>]}
+[0m10:28:40.020291 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'feaa4755-aaf1-4a1f-9b55-4e907b1f4449', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001991DF75250>]}
+[0m10:28:40.035843 [info ] [Thread-2  ]: 2 of 4 OK created sql view model DEV.V_AGG_PRICE_BY_NAME ....................... [[32mSUCCESS 1[0m in 1.94s]
+[0m10:28:40.035843 [debug] [Thread-2  ]: Finished running node model.dbt_fisrt_project.V_AGG_PRICE_BY_NAME
+[0m10:28:40.035843 [info ] [Thread-1  ]: 1 of 4 OK created sql view model DEV.Raw_host .................................. [[32mSUCCESS 1[0m in 1.95s]
+[0m10:28:40.035843 [debug] [Thread-1  ]: Finished running node model.dbt_fisrt_project.Raw_host
+[0m10:28:40.392588 [debug] [Thread-3  ]: SQL status: SUCCESS 1 in 2.185 seconds
+[0m10:28:40.408065 [debug] [Thread-3  ]: On model.dbt_fisrt_project.my_first_dbt_model: Close
+[0m10:28:40.646323 [debug] [Thread-3  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'feaa4755-aaf1-4a1f-9b55-4e907b1f4449', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019921942FA0>]}
+[0m10:28:40.646323 [info ] [Thread-3  ]: 3 of 4 OK created sql table model DEV.my_first_dbt_model ....................... [[32mSUCCESS 1[0m in 2.59s]
+[0m10:28:40.661933 [debug] [Thread-3  ]: Finished running node model.dbt_fisrt_project.my_first_dbt_model
+[0m10:28:40.661933 [debug] [Thread-4  ]: Began running node model.dbt_fisrt_project.my_second_dbt_model
+[0m10:28:40.661933 [info ] [Thread-4  ]: 4 of 4 START sql view model DEV.my_second_dbt_model ............................ [RUN]
+[0m10:28:40.674781 [debug] [Thread-4  ]: Acquiring new snowflake connection 'model.dbt_fisrt_project.my_second_dbt_model'
+[0m10:28:40.677907 [debug] [Thread-4  ]: Began compiling node model.dbt_fisrt_project.my_second_dbt_model
+[0m10:28:40.692734 [debug] [Thread-4  ]: Writing injected SQL for node "model.dbt_fisrt_project.my_second_dbt_model"
+[0m10:28:40.695733 [debug] [Thread-4  ]: Began executing node model.dbt_fisrt_project.my_second_dbt_model
+[0m10:28:40.697662 [debug] [Thread-4  ]: Writing runtime sql for node "model.dbt_fisrt_project.my_second_dbt_model"
+[0m10:28:40.697662 [debug] [Thread-4  ]: Using snowflake connection "model.dbt_fisrt_project.my_second_dbt_model"
+[0m10:28:40.708359 [debug] [Thread-4  ]: On model.dbt_fisrt_project.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "dbt_fisrt_project", "target_name": "dev", "node_id": "model.dbt_fisrt_project.my_second_dbt_model"} */
+create or replace   view AIRBNB_LIRAN.DEV.my_second_dbt_model
+  
+   as (
+    -- Use the `ref` function to select from other models
+
+select *
+from AIRBNB_LIRAN.DEV.my_first_dbt_model
+where id = 1
+  );
+[0m10:28:40.709858 [debug] [Thread-4  ]: Opening a new connection, currently in state init
+[0m10:28:42.105273 [debug] [Thread-4  ]: SQL status: SUCCESS 1 in 1.410 seconds
+[0m10:28:42.120899 [debug] [Thread-4  ]: On model.dbt_fisrt_project.my_second_dbt_model: Close
+[0m10:28:42.313598 [debug] [Thread-4  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'feaa4755-aaf1-4a1f-9b55-4e907b1f4449', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019921A057C0>]}
+[0m10:28:42.329223 [info ] [Thread-4  ]: 4 of 4 OK created sql view model DEV.my_second_dbt_model ....................... [[32mSUCCESS 1[0m in 1.65s]
+[0m10:28:42.329223 [debug] [Thread-4  ]: Finished running node model.dbt_fisrt_project.my_second_dbt_model
+[0m10:28:42.329223 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m10:28:42.329223 [debug] [MainThread]: Connection 'list_AIRBNB_LIRAN' was properly closed.
+[0m10:28:42.329223 [debug] [MainThread]: Connection 'list_AIRBNB_LIRAN_DEV' was properly closed.
+[0m10:28:42.329223 [debug] [MainThread]: Connection 'model.dbt_fisrt_project.Raw_host' was properly closed.
+[0m10:28:42.329223 [debug] [MainThread]: Connection 'model.dbt_fisrt_project.my_first_dbt_model' was properly closed.
+[0m10:28:42.329223 [debug] [MainThread]: Connection 'model.dbt_fisrt_project.V_AGG_PRICE_BY_NAME' was properly closed.
+[0m10:28:42.329223 [debug] [MainThread]: Connection 'model.dbt_fisrt_project.my_second_dbt_model' was properly closed.
+[0m10:28:42.329223 [info ] [MainThread]: 
+[0m10:28:42.343090 [info ] [MainThread]: Finished running 3 view models, 1 table model in 0 hours 0 minutes and 7.44 seconds (7.44s).
+[0m10:28:42.345345 [debug] [MainThread]: Command end result
+[0m10:28:42.413663 [info ] [MainThread]: 
+[0m10:28:42.414662 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m10:28:42.416666 [info ] [MainThread]: 
+[0m10:28:42.418672 [info ] [MainThread]: Done. PASS=4 WARN=0 ERROR=0 SKIP=0 TOTAL=4
+[0m10:28:42.422666 [debug] [MainThread]: Command `dbt run` succeeded at 10:28:42.421666 after 9.05 seconds
+[0m10:28:42.425416 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001991DB47490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019921308F40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001992012F520>]}
+[0m10:28:42.425416 [debug] [MainThread]: Flushing usage events
+[0m10:29:09.758378 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AD25D08460>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AD287B6B80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AD287B6F10>]}
+
+
+============================== 10:29:09.774004 | 43b6a2a4-831e-4de8-931f-ea7c183b64cc ==============================
+[0m10:29:09.774004 [info ] [MainThread]: Running with dbt=1.8.4
+[0m10:29:09.774004 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': 'C:\\Users\\Dell\\DBT_PROJECT\\dbt_fisrt_project\\logs', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\Dell\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'invocation_command': 'dbt snapshot', 'send_anonymous_usage_stats': 'True'}
+[0m10:29:10.576690 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '43b6a2a4-831e-4de8-931f-ea7c183b64cc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AD2949A460>]}
+[0m10:29:10.677562 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '43b6a2a4-831e-4de8-931f-ea7c183b64cc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AD282E1910>]}
+[0m10:29:10.677562 [info ] [MainThread]: Registered adapter: snowflake=1.8.3
+[0m10:29:10.693339 [debug] [MainThread]: checksum: 54398663eddc8e4ac172fdab397e09b2aa6984947a84e6ec7983096c3fae7b7a, vars: {}, profile: , target: , version: 1.8.4
+[0m10:29:10.951116 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m10:29:10.951116 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m10:29:11.013613 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '43b6a2a4-831e-4de8-931f-ea7c183b64cc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AD29814130>]}
+[0m10:29:11.243317 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '43b6a2a4-831e-4de8-931f-ea7c183b64cc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AD29832A30>]}
+[0m10:29:11.243317 [info ] [MainThread]: Found 4 models, 4 data tests, 448 macros
+[0m10:29:11.243317 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '43b6a2a4-831e-4de8-931f-ea7c183b64cc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AD29832340>]}
+[0m10:29:11.243317 [info ] [MainThread]: 
+[0m10:29:11.243317 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m10:29:11.260036 [debug] [MainThread]: Command end result
+[0m10:29:11.312709 [debug] [MainThread]: Command `dbt snapshot` succeeded at 10:29:11.312709 after 1.66 seconds
+[0m10:29:11.312709 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AD25D08460>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AD29829130>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AD29829670>]}
+[0m10:29:11.312709 [debug] [MainThread]: Flushing usage events
+[0m10:30:21.824619 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015129A48430>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001512C4F6B20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001512C4F6F40>]}
+
+
+============================== 10:30:21.824619 | 3124489d-e492-4aeb-9e03-09c1ed4901d5 ==============================
+[0m10:30:21.824619 [info ] [MainThread]: Running with dbt=1.8.4
+[0m10:30:21.824619 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\Dell\\.dbt', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'C:\\Users\\Dell\\DBT_PROJECT\\dbt_fisrt_project\\logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'invocation_command': 'dbt snapshot', 'send_anonymous_usage_stats': 'True'}
+[0m10:30:22.595659 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '3124489d-e492-4aeb-9e03-09c1ed4901d5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015129E25EB0>]}
+[0m10:30:22.673740 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '3124489d-e492-4aeb-9e03-09c1ed4901d5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001512C4A4D30>]}
+[0m10:30:22.689366 [info ] [MainThread]: Registered adapter: snowflake=1.8.3
+[0m10:30:22.689366 [debug] [MainThread]: checksum: 54398663eddc8e4ac172fdab397e09b2aa6984947a84e6ec7983096c3fae7b7a, vars: {}, profile: , target: , version: 1.8.4
+[0m10:30:22.936965 [debug] [MainThread]: Partial parsing enabled: 1 files deleted, 1 files added, 0 files changed.
+[0m10:30:22.936965 [debug] [MainThread]: Partial parsing: added file: dbt_fisrt_project://snapshots\Dim_SCD_Host.sql
+[0m10:30:22.936965 [debug] [MainThread]: Partial parsing: deleted file: dbt_fisrt_project://snapshots\DIM_SCD_Host.sql
+[0m10:30:23.113566 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '3124489d-e492-4aeb-9e03-09c1ed4901d5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001512D21E460>]}
+[0m10:30:23.285428 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '3124489d-e492-4aeb-9e03-09c1ed4901d5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001512C49A880>]}
+[0m10:30:23.285428 [info ] [MainThread]: Found 4 models, 4 data tests, 448 macros
+[0m10:30:23.285428 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '3124489d-e492-4aeb-9e03-09c1ed4901d5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001512D3BD4C0>]}
+[0m10:30:23.285428 [info ] [MainThread]: 
+[0m10:30:23.297807 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m10:30:23.299892 [debug] [MainThread]: Command end result
+[0m10:30:23.349693 [debug] [MainThread]: Command `dbt snapshot` succeeded at 10:30:23.349693 after 1.61 seconds
+[0m10:30:23.351689 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015129A48430>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001512D52B610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001512D52BE20>]}
+[0m10:30:23.352691 [debug] [MainThread]: Flushing usage events
+[0m10:30:50.631851 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F5A2226FA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F5A4CF6FD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F5A4CF6D60>]}
+
+
+============================== 10:30:50.647478 | 73719d36-fdcc-4bbb-a152-eef0d00a1096 ==============================
+[0m10:30:50.647478 [info ] [MainThread]: Running with dbt=1.8.4
+[0m10:30:50.647478 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'C:\\Users\\Dell\\DBT_PROJECT\\dbt_fisrt_project\\logs', 'version_check': 'True', 'profiles_dir': 'C:\\Users\\Dell\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'invocation_command': 'dbt debug', 'send_anonymous_usage_stats': 'True'}
+[0m10:30:50.683662 [info ] [MainThread]: dbt version: 1.8.4
+[0m10:30:50.701003 [info ] [MainThread]: python version: 3.9.9
+[0m10:30:50.701999 [info ] [MainThread]: python path: C:\Users\Dell\DBT_PROJECT\dbt_fisrt_project\dbt-env\Scripts\python.exe
+[0m10:30:50.704001 [info ] [MainThread]: os info: Windows-10-10.0.19045-SP0
+[0m10:30:51.365203 [info ] [MainThread]: Using profiles dir at C:\Users\Dell\.dbt
+[0m10:30:51.365203 [info ] [MainThread]: Using profiles.yml file at C:\Users\Dell\.dbt\profiles.yml
+[0m10:30:51.365203 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\Dell\DBT_PROJECT\dbt_fisrt_project\dbt_project.yml
+[0m10:30:51.375668 [info ] [MainThread]: adapter type: snowflake
+[0m10:30:51.377766 [info ] [MainThread]: adapter version: 1.8.3
+[0m10:30:51.562841 [info ] [MainThread]: Configuration:
+[0m10:30:51.562841 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m10:30:51.562841 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m10:30:51.562841 [info ] [MainThread]: Required dependencies:
+[0m10:30:51.562841 [debug] [MainThread]: Executing "git --help"
+[0m10:30:51.633746 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m10:30:51.633746 [debug] [MainThread]: STDERR: "b''"
+[0m10:30:51.633746 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m10:30:51.633746 [info ] [MainThread]: Connection:
+[0m10:30:51.633746 [info ] [MainThread]:   account: cx26056.eu-central-1
+[0m10:30:51.633746 [info ] [MainThread]:   user: lirany
+[0m10:30:51.633746 [info ] [MainThread]:   database: AIRBNB_LIRAN
+[0m10:30:51.633746 [info ] [MainThread]:   warehouse: COMPUTE_WH
+[0m10:30:51.633746 [info ] [MainThread]:   role: ACCOUNTADMIN
+[0m10:30:51.651618 [info ] [MainThread]:   schema: DEV
+[0m10:30:51.653622 [info ] [MainThread]:   authenticator: None
+[0m10:30:51.653622 [info ] [MainThread]:   oauth_client_id: None
+[0m10:30:51.653622 [info ] [MainThread]:   query_tag: None
+[0m10:30:51.660610 [info ] [MainThread]:   client_session_keep_alive: False
+[0m10:30:51.662607 [info ] [MainThread]:   host: None
+[0m10:30:51.663660 [info ] [MainThread]:   port: None
+[0m10:30:51.663660 [info ] [MainThread]:   proxy_host: None
+[0m10:30:51.666268 [info ] [MainThread]:   proxy_port: None
+[0m10:30:51.668266 [info ] [MainThread]:   protocol: None
+[0m10:30:51.670762 [info ] [MainThread]:   connect_retries: 1
+[0m10:30:51.670762 [info ] [MainThread]:   connect_timeout: None
+[0m10:30:51.670762 [info ] [MainThread]:   retry_on_database_errors: False
+[0m10:30:51.670762 [info ] [MainThread]:   retry_all: False
+[0m10:30:51.670762 [info ] [MainThread]:   insecure_mode: False
+[0m10:30:51.670762 [info ] [MainThread]:   reuse_connections: None
+[0m10:30:51.684004 [info ] [MainThread]: Registered adapter: snowflake=1.8.3
+[0m10:30:51.686617 [debug] [MainThread]: Acquiring new snowflake connection 'debug'
+[0m10:30:51.686617 [debug] [MainThread]: Using snowflake connection "debug"
+[0m10:30:51.686617 [debug] [MainThread]: On debug: select 1 as id
+[0m10:30:51.686617 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m10:30:52.873289 [debug] [MainThread]: SQL status: SUCCESS 1 in 1.184 seconds
+[0m10:30:52.873289 [debug] [MainThread]: On debug: Close
+[0m10:30:53.107720 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m10:30:53.107720 [info ] [MainThread]: [32mAll checks passed![0m
+[0m10:30:53.107720 [debug] [MainThread]: Command `dbt debug` succeeded at 10:30:53.107720 after 2.59 seconds
+[0m10:30:53.107720 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m10:30:53.107720 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F5A2226FA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F5A4CF6D00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F5A5A53550>]}
+[0m10:30:53.107720 [debug] [MainThread]: Flushing usage events
+[0m10:31:15.221074 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016615E78460>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016618922B80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016618922F10>]}
+
+
+============================== 10:31:15.236738 | 210cdc1e-c435-4ef8-8aac-ac1412457d73 ==============================
+[0m10:31:15.236738 [info ] [MainThread]: Running with dbt=1.8.4
+[0m10:31:15.236738 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\Dell\\.dbt', 'debug': 'False', 'version_check': 'True', 'log_path': 'C:\\Users\\Dell\\DBT_PROJECT\\dbt_fisrt_project\\logs', 'warn_error': 'None', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt snapshot', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m10:31:15.918059 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '210cdc1e-c435-4ef8-8aac-ac1412457d73', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001661961A460>]}
+[0m10:31:15.996218 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '210cdc1e-c435-4ef8-8aac-ac1412457d73', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016618451910>]}
+[0m10:31:15.996218 [info ] [MainThread]: Registered adapter: snowflake=1.8.3
+[0m10:31:16.011825 [debug] [MainThread]: checksum: 54398663eddc8e4ac172fdab397e09b2aa6984947a84e6ec7983096c3fae7b7a, vars: {}, profile: , target: , version: 1.8.4
+[0m10:31:16.272155 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m10:31:16.272155 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m10:31:16.334659 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '210cdc1e-c435-4ef8-8aac-ac1412457d73', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016619994130>]}
+[0m10:31:16.553400 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '210cdc1e-c435-4ef8-8aac-ac1412457d73', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000166199B2A30>]}
+[0m10:31:16.553400 [info ] [MainThread]: Found 4 models, 4 data tests, 448 macros
+[0m10:31:16.553400 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '210cdc1e-c435-4ef8-8aac-ac1412457d73', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000166199B2340>]}
+[0m10:31:16.553400 [info ] [MainThread]: 
+[0m10:31:16.553400 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m10:31:16.571005 [debug] [MainThread]: Command end result
+[0m10:31:16.620745 [debug] [MainThread]: Command `dbt snapshot` succeeded at 10:31:16.620745 after 1.48 seconds
+[0m10:31:16.620745 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016615E78460>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000166199A9130>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000166199A9670>]}
+[0m10:31:16.620745 [debug] [MainThread]: Flushing usage events
+[0m10:36:52.326349 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022736298460>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022738D42B80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022738D42F10>]}
+
+
+============================== 10:36:52.332344 | 23bb9c78-86a1-40f5-bc00-5ea76cc60a5b ==============================
+[0m10:36:52.332344 [info ] [MainThread]: Running with dbt=1.8.4
+[0m10:36:52.334351 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\Dell\\.dbt', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'C:\\Users\\Dell\\DBT_PROJECT\\dbt_fisrt_project\\logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt snapshot', 'send_anonymous_usage_stats': 'True'}
+[0m10:36:53.059590 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '23bb9c78-86a1-40f5-bc00-5ea76cc60a5b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022739A2A460>]}
+[0m10:36:53.134237 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '23bb9c78-86a1-40f5-bc00-5ea76cc60a5b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022738870910>]}
+[0m10:36:53.137202 [info ] [MainThread]: Registered adapter: snowflake=1.8.3
+[0m10:36:53.153013 [debug] [MainThread]: checksum: 54398663eddc8e4ac172fdab397e09b2aa6984947a84e6ec7983096c3fae7b7a, vars: {}, profile: , target: , version: 1.8.4
+[0m10:36:53.407924 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m10:36:53.409481 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m10:36:53.472481 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '23bb9c78-86a1-40f5-bc00-5ea76cc60a5b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022739DA4130>]}
+[0m10:36:53.697405 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '23bb9c78-86a1-40f5-bc00-5ea76cc60a5b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022739DC2A30>]}
+[0m10:36:53.698402 [info ] [MainThread]: Found 4 models, 4 data tests, 448 macros
+[0m10:36:53.700399 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '23bb9c78-86a1-40f5-bc00-5ea76cc60a5b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022739DC2340>]}
+[0m10:36:53.702402 [info ] [MainThread]: 
+[0m10:36:53.703397 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m10:36:53.708975 [debug] [MainThread]: Command end result
+[0m10:36:53.764027 [debug] [MainThread]: Command `dbt snapshot` succeeded at 10:36:53.763027 after 1.54 seconds
+[0m10:36:53.765027 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022736298460>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022739DB9130>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022739DB9670>]}
+[0m10:36:53.766026 [debug] [MainThread]: Flushing usage events
+[0m10:37:02.513525 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021CF0D97460>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021CF3841B80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021CF3841F10>]}
+
+
+============================== 10:37:02.520524 | 0809bbc7-cef9-47bf-92e7-4ea1aa594abd ==============================
+[0m10:37:02.520524 [info ] [MainThread]: Running with dbt=1.8.4
+[0m10:37:02.521521 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': 'C:\\Users\\Dell\\DBT_PROJECT\\dbt_fisrt_project\\logs', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\Dell\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'invocation_command': 'dbt snapshot', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m10:37:03.235804 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '0809bbc7-cef9-47bf-92e7-4ea1aa594abd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021CF452A460>]}
+[0m10:37:03.312140 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '0809bbc7-cef9-47bf-92e7-4ea1aa594abd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021CF3371910>]}
+[0m10:37:03.315142 [info ] [MainThread]: Registered adapter: snowflake=1.8.3
+[0m10:37:03.331151 [debug] [MainThread]: checksum: 54398663eddc8e4ac172fdab397e09b2aa6984947a84e6ec7983096c3fae7b7a, vars: {}, profile: , target: , version: 1.8.4
+[0m10:37:03.594760 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m10:37:03.595799 [debug] [MainThread]: Partial parsing: updated file: dbt_fisrt_project://snapshots\Dim_SCD_Host.sql
+[0m10:37:04.068170 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '0809bbc7-cef9-47bf-92e7-4ea1aa594abd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021CF457E670>]}
+[0m10:37:04.267281 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '0809bbc7-cef9-47bf-92e7-4ea1aa594abd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021CF48D2AC0>]}
+[0m10:37:04.268318 [info ] [MainThread]: Found 4 models, 4 data tests, 1 snapshot, 448 macros
+[0m10:37:04.270283 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '0809bbc7-cef9-47bf-92e7-4ea1aa594abd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021CF457E130>]}
+[0m10:37:04.272318 [info ] [MainThread]: 
+[0m10:37:04.273447 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m10:37:04.277248 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_AIRBNB_LIRAN'
+[0m10:37:04.304235 [debug] [ThreadPool]: Using snowflake connection "list_AIRBNB_LIRAN"
+[0m10:37:04.305236 [debug] [ThreadPool]: On list_AIRBNB_LIRAN: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "dbt_fisrt_project", "target_name": "dev", "connection_name": "list_AIRBNB_LIRAN"} */
+show terse schemas in database AIRBNB_LIRAN
+    limit 10000
+[0m10:37:04.306236 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m10:37:05.500805 [debug] [ThreadPool]: SQL status: SUCCESS 4 in 1.194 seconds
+[0m10:37:05.504805 [debug] [ThreadPool]: On list_AIRBNB_LIRAN: Close
+[0m10:37:07.643865 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_AIRBNB_LIRAN_DEV'
+[0m10:37:07.669630 [debug] [ThreadPool]: Using snowflake connection "list_AIRBNB_LIRAN_DEV"
+[0m10:37:07.670630 [debug] [ThreadPool]: On list_AIRBNB_LIRAN_DEV: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "dbt_fisrt_project", "target_name": "dev", "connection_name": "list_AIRBNB_LIRAN_DEV"} */
+show objects in AIRBNB_LIRAN.DEV limit 10000
+[0m10:37:07.672631 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m10:37:08.789068 [debug] [ThreadPool]: SQL status: SUCCESS 11 in 1.116 seconds
+[0m10:37:08.800100 [debug] [ThreadPool]: On list_AIRBNB_LIRAN_DEV: Close
+[0m10:37:09.030837 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '0809bbc7-cef9-47bf-92e7-4ea1aa594abd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021CF4602400>]}
+[0m10:37:09.034837 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m10:37:09.039094 [info ] [MainThread]: 
+[0m10:37:09.064776 [debug] [Thread-1  ]: Began running node snapshot.dbt_fisrt_project.DIM_SCD_Host
+[0m10:37:09.070749 [info ] [Thread-1  ]: 1 of 1 START snapshot DEV.DIM_SCD_Host ......................................... [RUN]
+[0m10:37:09.078982 [debug] [Thread-1  ]: Acquiring new snowflake connection 'snapshot.dbt_fisrt_project.DIM_SCD_Host'
+[0m10:37:09.081987 [debug] [Thread-1  ]: Began compiling node snapshot.dbt_fisrt_project.DIM_SCD_Host
+[0m10:37:09.107011 [debug] [Thread-1  ]: Began executing node snapshot.dbt_fisrt_project.DIM_SCD_Host
+[0m10:37:09.215507 [debug] [Thread-1  ]: Writing runtime sql for node "snapshot.dbt_fisrt_project.DIM_SCD_Host"
+[0m10:37:09.220513 [debug] [Thread-1  ]: Using snowflake connection "snapshot.dbt_fisrt_project.DIM_SCD_Host"
+[0m10:37:09.221556 [debug] [Thread-1  ]: On snapshot.dbt_fisrt_project.DIM_SCD_Host: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "dbt_fisrt_project", "target_name": "dev", "node_id": "snapshot.dbt_fisrt_project.DIM_SCD_Host"} */
+create or replace transient table AIRBNB_LIRAN.DEV.DIM_SCD_Host
+         as
+        (
+
+    select *,
+        md5(coalesce(cast(id as varchar ), '')
+         || '|' || coalesce(cast(to_timestamp_ntz(convert_timezone('UTC', current_timestamp())) as varchar ), '')
+        ) as dbt_scd_id,
+        to_timestamp_ntz(convert_timezone('UTC', current_timestamp())) as dbt_updated_at,
+        to_timestamp_ntz(convert_timezone('UTC', current_timestamp())) as dbt_valid_from,
+        nullif(to_timestamp_ntz(convert_timezone('UTC', current_timestamp())), to_timestamp_ntz(convert_timezone('UTC', current_timestamp()))) as dbt_valid_to
+    from (
+        
+
+
+
+select * from AIRBNB_LIRAN.DEV.Raw_host
+
+    ) sbq
+
+
+
+        );
+[0m10:37:09.223508 [debug] [Thread-1  ]: Opening a new connection, currently in state init
+[0m10:37:11.507558 [debug] [Thread-1  ]: SQL status: SUCCESS 1 in 2.283 seconds
+[0m10:37:11.588706 [debug] [Thread-1  ]: On snapshot.dbt_fisrt_project.DIM_SCD_Host: Close
+[0m10:37:11.787788 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '0809bbc7-cef9-47bf-92e7-4ea1aa594abd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021CF3CF27C0>]}
+[0m10:37:11.792806 [info ] [Thread-1  ]: 1 of 1 OK snapshotted DEV.DIM_SCD_Host ......................................... [[32mSUCCESS 1[0m in 2.70s]
+[0m10:37:11.799166 [debug] [Thread-1  ]: Finished running node snapshot.dbt_fisrt_project.DIM_SCD_Host
+[0m10:37:11.802605 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m10:37:11.804610 [debug] [MainThread]: Connection 'list_AIRBNB_LIRAN' was properly closed.
+[0m10:37:11.805612 [debug] [MainThread]: Connection 'list_AIRBNB_LIRAN_DEV' was properly closed.
+[0m10:37:11.806621 [debug] [MainThread]: Connection 'snapshot.dbt_fisrt_project.DIM_SCD_Host' was properly closed.
+[0m10:37:11.807613 [info ] [MainThread]: 
+[0m10:37:11.811489 [info ] [MainThread]: Finished running 1 snapshot in 0 hours 0 minutes and 7.53 seconds (7.53s).
+[0m10:37:11.814492 [debug] [MainThread]: Command end result
+[0m10:37:11.880456 [info ] [MainThread]: 
+[0m10:37:11.882486 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m10:37:11.883453 [info ] [MainThread]: 
+[0m10:37:11.885456 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m10:37:11.887453 [debug] [MainThread]: Command `dbt snapshot` succeeded at 10:37:11.887453 after 9.51 seconds
+[0m10:37:11.888487 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021CF0D97460>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021CF1262070>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021CF3371AC0>]}
+[0m10:37:11.889500 [debug] [MainThread]: Flushing usage events
+[0m10:37:59.595031 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002053DDB6FA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020540883B20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020540883EE0>]}
+
+
+============================== 10:37:59.601501 | 0ef7bcfb-1f47-40fa-a198-763b256d8a72 ==============================
+[0m10:37:59.601501 [info ] [MainThread]: Running with dbt=1.8.4
+[0m10:37:59.603501 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'C:\\Users\\Dell\\DBT_PROJECT\\dbt_fisrt_project\\logs', 'version_check': 'True', 'profiles_dir': 'C:\\Users\\Dell\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'invocation_command': 'dbt snapshot --select Dim_SCD_Host.sql', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m10:38:00.333880 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '0ef7bcfb-1f47-40fa-a198-763b256d8a72', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002054154B310>]}
+[0m10:38:00.409391 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '0ef7bcfb-1f47-40fa-a198-763b256d8a72', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002054156B910>]}
+[0m10:38:00.411390 [info ] [MainThread]: Registered adapter: snowflake=1.8.3
+[0m10:38:00.433848 [debug] [MainThread]: checksum: 54398663eddc8e4ac172fdab397e09b2aa6984947a84e6ec7983096c3fae7b7a, vars: {}, profile: , target: , version: 1.8.4
+[0m10:38:00.733000 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m10:38:00.734999 [debug] [MainThread]: Partial parsing: updated file: dbt_fisrt_project://snapshots\Dim_SCD_Host.sql
+[0m10:38:01.185985 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '0ef7bcfb-1f47-40fa-a198-763b256d8a72', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000205419DA100>]}
+[0m10:38:01.382070 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '0ef7bcfb-1f47-40fa-a198-763b256d8a72', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000205415C0700>]}
+[0m10:38:01.384072 [info ] [MainThread]: Found 4 models, 4 data tests, 1 snapshot, 448 macros
+[0m10:38:01.385083 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '0ef7bcfb-1f47-40fa-a198-763b256d8a72', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000205419D6B20>]}
+[0m10:38:01.388074 [info ] [MainThread]: 
+[0m10:38:01.390071 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m10:38:01.392077 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_AIRBNB_LIRAN'
+[0m10:38:01.414852 [debug] [ThreadPool]: Using snowflake connection "list_AIRBNB_LIRAN"
+[0m10:38:01.416852 [debug] [ThreadPool]: On list_AIRBNB_LIRAN: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "dbt_fisrt_project", "target_name": "dev", "connection_name": "list_AIRBNB_LIRAN"} */
+show terse schemas in database AIRBNB_LIRAN
+    limit 10000
+[0m10:38:01.416852 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m10:38:02.658185 [debug] [ThreadPool]: SQL status: SUCCESS 4 in 1.240 seconds
+[0m10:38:02.662660 [debug] [ThreadPool]: On list_AIRBNB_LIRAN: Close
+[0m10:38:02.859642 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_AIRBNB_LIRAN, now create_AIRBNB_LIRAN_DWH)
+[0m10:38:02.860643 [debug] [ThreadPool]: Creating schema "database: "AIRBNB_LIRAN"
+schema: "DWH"
+"
+[0m10:38:02.875400 [debug] [ThreadPool]: Using snowflake connection "create_AIRBNB_LIRAN_DWH"
+[0m10:38:02.876400 [debug] [ThreadPool]: On create_AIRBNB_LIRAN_DWH: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "dbt_fisrt_project", "target_name": "dev", "connection_name": "create_AIRBNB_LIRAN_DWH"} */
+create schema if not exists AIRBNB_LIRAN.DWH
+[0m10:38:02.877398 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m10:38:04.019497 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 1.142 seconds
+[0m10:38:04.025495 [debug] [ThreadPool]: On create_AIRBNB_LIRAN_DWH: Close
+[0m10:38:04.234546 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_AIRBNB_LIRAN_DEV'
+[0m10:38:04.235540 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_AIRBNB_LIRAN_DWH'
+[0m10:38:04.250706 [debug] [ThreadPool]: Using snowflake connection "list_AIRBNB_LIRAN_DEV"
+[0m10:38:04.253742 [debug] [ThreadPool]: Using snowflake connection "list_AIRBNB_LIRAN_DWH"
+[0m10:38:04.254745 [debug] [ThreadPool]: On list_AIRBNB_LIRAN_DEV: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "dbt_fisrt_project", "target_name": "dev", "connection_name": "list_AIRBNB_LIRAN_DEV"} */
+show objects in AIRBNB_LIRAN.DEV limit 10000
+[0m10:38:04.256077 [debug] [ThreadPool]: On list_AIRBNB_LIRAN_DWH: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "dbt_fisrt_project", "target_name": "dev", "connection_name": "list_AIRBNB_LIRAN_DWH"} */
+show objects in AIRBNB_LIRAN.DWH limit 10000
+[0m10:38:04.256821 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m10:38:04.257835 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m10:38:05.435394 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 1.178 seconds
+[0m10:38:05.445390 [debug] [ThreadPool]: On list_AIRBNB_LIRAN_DWH: Close
+[0m10:38:05.486937 [debug] [ThreadPool]: SQL status: SUCCESS 12 in 1.230 seconds
+[0m10:38:05.501977 [debug] [ThreadPool]: On list_AIRBNB_LIRAN_DEV: Close
+[0m10:38:05.773496 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '0ef7bcfb-1f47-40fa-a198-763b256d8a72', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000205406BA160>]}
+[0m10:38:05.776498 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m10:38:05.779811 [info ] [MainThread]: 
+[0m10:38:05.793641 [debug] [Thread-1  ]: Began running node snapshot.dbt_fisrt_project.DIM_SCD_Host
+[0m10:38:05.798907 [info ] [Thread-1  ]: 1 of 1 START snapshot DWH.DIM_SCD_Host ......................................... [RUN]
+[0m10:38:05.801903 [debug] [Thread-1  ]: Acquiring new snowflake connection 'snapshot.dbt_fisrt_project.DIM_SCD_Host'
+[0m10:38:05.803908 [debug] [Thread-1  ]: Began compiling node snapshot.dbt_fisrt_project.DIM_SCD_Host
+[0m10:38:05.827932 [debug] [Thread-1  ]: Began executing node snapshot.dbt_fisrt_project.DIM_SCD_Host
+[0m10:38:05.933208 [debug] [Thread-1  ]: Writing runtime sql for node "snapshot.dbt_fisrt_project.DIM_SCD_Host"
+[0m10:38:05.937194 [debug] [Thread-1  ]: Using snowflake connection "snapshot.dbt_fisrt_project.DIM_SCD_Host"
+[0m10:38:05.938198 [debug] [Thread-1  ]: On snapshot.dbt_fisrt_project.DIM_SCD_Host: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "dbt_fisrt_project", "target_name": "dev", "node_id": "snapshot.dbt_fisrt_project.DIM_SCD_Host"} */
+create or replace transient table AIRBNB_LIRAN.DWH.DIM_SCD_Host
+         as
+        (
+
+    select *,
+        md5(coalesce(cast(id as varchar ), '')
+         || '|' || coalesce(cast(to_timestamp_ntz(convert_timezone('UTC', current_timestamp())) as varchar ), '')
+        ) as dbt_scd_id,
+        to_timestamp_ntz(convert_timezone('UTC', current_timestamp())) as dbt_updated_at,
+        to_timestamp_ntz(convert_timezone('UTC', current_timestamp())) as dbt_valid_from,
+        nullif(to_timestamp_ntz(convert_timezone('UTC', current_timestamp())), to_timestamp_ntz(convert_timezone('UTC', current_timestamp()))) as dbt_valid_to
+    from (
+        
+
+
+
+select * from AIRBNB_LIRAN.DEV.Raw_host
+
+    ) sbq
+
+
+
+        );
+[0m10:38:05.939198 [debug] [Thread-1  ]: Opening a new connection, currently in state init
+[0m10:38:08.385757 [debug] [Thread-1  ]: SQL status: SUCCESS 1 in 2.446 seconds
+[0m10:38:08.445469 [debug] [Thread-1  ]: On snapshot.dbt_fisrt_project.DIM_SCD_Host: Close
+[0m10:38:08.769626 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '0ef7bcfb-1f47-40fa-a198-763b256d8a72', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020540D34730>]}
+[0m10:38:08.771627 [info ] [Thread-1  ]: 1 of 1 OK snapshotted DWH.DIM_SCD_Host ......................................... [[32mSUCCESS 1[0m in 2.97s]
+[0m10:38:08.773629 [debug] [Thread-1  ]: Finished running node snapshot.dbt_fisrt_project.DIM_SCD_Host
+[0m10:38:08.775625 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m10:38:08.776625 [debug] [MainThread]: Connection 'create_AIRBNB_LIRAN_DWH' was properly closed.
+[0m10:38:08.777627 [debug] [MainThread]: Connection 'list_AIRBNB_LIRAN_DEV' was properly closed.
+[0m10:38:08.778838 [debug] [MainThread]: Connection 'list_AIRBNB_LIRAN_DWH' was properly closed.
+[0m10:38:08.780819 [debug] [MainThread]: Connection 'snapshot.dbt_fisrt_project.DIM_SCD_Host' was properly closed.
+[0m10:38:08.781821 [info ] [MainThread]: 
+[0m10:38:08.783820 [info ] [MainThread]: Finished running 1 snapshot in 0 hours 0 minutes and 7.39 seconds (7.39s).
+[0m10:38:08.786820 [debug] [MainThread]: Command end result
+[0m10:38:08.856816 [info ] [MainThread]: 
+[0m10:38:08.858820 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m10:38:08.860818 [info ] [MainThread]: 
+[0m10:38:08.861819 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m10:38:08.865820 [debug] [MainThread]: Command `dbt snapshot` succeeded at 10:38:08.865820 after 9.37 seconds
+[0m10:38:08.867816 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002053DDB6FA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002053E2B7760>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000205418FD8E0>]}
+[0m10:38:08.868852 [debug] [MainThread]: Flushing usage events
+[0m11:33:01.801906 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026AE30E6FA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026AE3A699D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026AE5B45790>]}
+
+
+============================== 11:33:01.817531 | 53e5f394-507e-45c2-9fb2-8bb6f38bb032 ==============================
+[0m11:33:01.817531 [info ] [MainThread]: Running with dbt=1.8.4
+[0m11:33:01.817531 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': 'C:\\Users\\Dell\\DBT_PROJECT\\dbt_fisrt_project\\logs', 'profiles_dir': 'C:\\Users\\Dell\\.dbt', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'invocation_command': 'dbt snapshot --select Dim_SCD_Host.sql', 'send_anonymous_usage_stats': 'True'}
+[0m11:33:02.594608 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '53e5f394-507e-45c2-9fb2-8bb6f38bb032', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026AE68DE4F0>]}
+[0m11:33:02.706843 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '53e5f394-507e-45c2-9fb2-8bb6f38bb032', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026AE5B45D00>]}
+[0m11:33:02.706843 [info ] [MainThread]: Registered adapter: snowflake=1.8.3
+[0m11:33:02.723518 [debug] [MainThread]: checksum: 54398663eddc8e4ac172fdab397e09b2aa6984947a84e6ec7983096c3fae7b7a, vars: {}, profile: , target: , version: 1.8.4
+[0m11:33:03.041485 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m11:33:03.041485 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m11:33:03.135267 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '53e5f394-507e-45c2-9fb2-8bb6f38bb032', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026AE6C31130>]}
+[0m11:33:03.390115 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '53e5f394-507e-45c2-9fb2-8bb6f38bb032', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026AE6C2D520>]}
+[0m11:33:03.390115 [info ] [MainThread]: Found 4 models, 4 data tests, 1 snapshot, 448 macros
+[0m11:33:03.390115 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '53e5f394-507e-45c2-9fb2-8bb6f38bb032', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026AE6C31130>]}
+[0m11:33:03.407139 [info ] [MainThread]: 
+[0m11:33:03.407139 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m11:33:03.407139 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_AIRBNB_LIRAN'
+[0m11:33:03.441718 [debug] [ThreadPool]: Using snowflake connection "list_AIRBNB_LIRAN"
+[0m11:33:03.442595 [debug] [ThreadPool]: On list_AIRBNB_LIRAN: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "dbt_fisrt_project", "target_name": "dev", "connection_name": "list_AIRBNB_LIRAN"} */
+show terse schemas in database AIRBNB_LIRAN
+    limit 10000
+[0m11:33:03.443592 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:33:05.374878 [debug] [ThreadPool]: SQL status: SUCCESS 5 in 1.931 seconds
+[0m11:33:05.377188 [debug] [ThreadPool]: On list_AIRBNB_LIRAN: Close
+[0m11:33:05.644706 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_AIRBNB_LIRAN_DEV'
+[0m11:33:05.669267 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_AIRBNB_LIRAN_DWH'
+[0m11:33:05.674267 [debug] [ThreadPool]: Using snowflake connection "list_AIRBNB_LIRAN_DEV"
+[0m11:33:05.676498 [debug] [ThreadPool]: Using snowflake connection "list_AIRBNB_LIRAN_DWH"
+[0m11:33:05.676498 [debug] [ThreadPool]: On list_AIRBNB_LIRAN_DEV: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "dbt_fisrt_project", "target_name": "dev", "connection_name": "list_AIRBNB_LIRAN_DEV"} */
+show objects in AIRBNB_LIRAN.DEV limit 10000
+[0m11:33:05.676498 [debug] [ThreadPool]: On list_AIRBNB_LIRAN_DWH: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "dbt_fisrt_project", "target_name": "dev", "connection_name": "list_AIRBNB_LIRAN_DWH"} */
+show objects in AIRBNB_LIRAN.DWH limit 10000
+[0m11:33:05.676498 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:33:05.676498 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:33:06.955656 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 1.278 seconds
+[0m11:33:06.955656 [debug] [ThreadPool]: On list_AIRBNB_LIRAN_DWH: Close
+[0m11:33:07.190104 [debug] [ThreadPool]: SQL status: SUCCESS 12 in 1.519 seconds
+[0m11:33:07.221190 [debug] [ThreadPool]: On list_AIRBNB_LIRAN_DEV: Close
+[0m11:33:07.488800 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '53e5f394-507e-45c2-9fb2-8bb6f38bb032', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026AE3533940>]}
+[0m11:33:07.488800 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m11:33:07.488800 [info ] [MainThread]: 
+[0m11:33:07.507665 [debug] [Thread-1  ]: Began running node snapshot.dbt_fisrt_project.DIM_SCD_Host
+[0m11:33:07.510695 [info ] [Thread-1  ]: 1 of 1 START snapshot DWH.DIM_SCD_Host ......................................... [RUN]
+[0m11:33:07.512660 [debug] [Thread-1  ]: Acquiring new snowflake connection 'snapshot.dbt_fisrt_project.DIM_SCD_Host'
+[0m11:33:07.514662 [debug] [Thread-1  ]: Began compiling node snapshot.dbt_fisrt_project.DIM_SCD_Host
+[0m11:33:07.523738 [debug] [Thread-1  ]: Began executing node snapshot.dbt_fisrt_project.DIM_SCD_Host
+[0m11:33:07.635366 [debug] [Thread-1  ]: Using snowflake connection "snapshot.dbt_fisrt_project.DIM_SCD_Host"
+[0m11:33:07.636362 [debug] [Thread-1  ]: On snapshot.dbt_fisrt_project.DIM_SCD_Host: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "dbt_fisrt_project", "target_name": "dev", "node_id": "snapshot.dbt_fisrt_project.DIM_SCD_Host"} */
+select * from (
+        select NAME, IS_SUPERHOST from (
+                
+
+
+
+select * from AIRBNB_LIRAN.DEV.Raw_host
+
+            ) subq
+    ) as __dbt_sbq
+    where false
+    limit 0
+[0m11:33:07.637363 [debug] [Thread-1  ]: Opening a new connection, currently in state init
+[0m11:33:08.881241 [debug] [Thread-1  ]: SQL status: SUCCESS 0 in 1.243 seconds
+[0m11:33:08.896517 [debug] [Thread-1  ]: Using snowflake connection "snapshot.dbt_fisrt_project.DIM_SCD_Host"
+[0m11:33:08.897475 [debug] [Thread-1  ]: On snapshot.dbt_fisrt_project.DIM_SCD_Host: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "dbt_fisrt_project", "target_name": "dev", "node_id": "snapshot.dbt_fisrt_project.DIM_SCD_Host"} */
+describe table "AIRBNB_LIRAN"."DWH"."DIM_SCD_HOST"
+[0m11:33:09.043156 [debug] [Thread-1  ]: SQL status: SUCCESS 9 in 0.144 seconds
+[0m11:33:09.060136 [debug] [Thread-1  ]: Using snowflake connection "snapshot.dbt_fisrt_project.DIM_SCD_Host"
+[0m11:33:09.062088 [debug] [Thread-1  ]: On snapshot.dbt_fisrt_project.DIM_SCD_Host: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "dbt_fisrt_project", "target_name": "dev", "node_id": "snapshot.dbt_fisrt_project.DIM_SCD_Host"} */
+describe table "AIRBNB_LIRAN"."DWH"."DIM_SCD_HOST"
+[0m11:33:09.413306 [debug] [Thread-1  ]: SQL status: SUCCESS 9 in 0.353 seconds
+[0m11:33:09.475778 [debug] [Thread-1  ]: Using snowflake connection "snapshot.dbt_fisrt_project.DIM_SCD_Host"
+[0m11:33:09.475778 [debug] [Thread-1  ]: On snapshot.dbt_fisrt_project.DIM_SCD_Host: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "dbt_fisrt_project", "target_name": "dev", "node_id": "snapshot.dbt_fisrt_project.DIM_SCD_Host"} */
+create or replace temporary table "AIRBNB_LIRAN"."DWH"."DIM_SCD_HOST__dbt_tmp"
+         as
+        (with snapshot_query as (
+
+        
+
+
+
+select * from AIRBNB_LIRAN.DEV.Raw_host
+
+
+    ),
+
+    snapshotted_data as (
+
+        select *,
+            id as dbt_unique_key
+
+        from "AIRBNB_LIRAN"."DWH"."DIM_SCD_HOST"
+        where dbt_valid_to is null
+
+    ),
+
+    insertions_source_data as (
+
+        select
+            *,
+            id as dbt_unique_key,
+            to_timestamp_ntz(convert_timezone('UTC', current_timestamp())) as dbt_updated_at,
+            to_timestamp_ntz(convert_timezone('UTC', current_timestamp())) as dbt_valid_from,
+            nullif(to_timestamp_ntz(convert_timezone('UTC', current_timestamp())), to_timestamp_ntz(convert_timezone('UTC', current_timestamp()))) as dbt_valid_to,
+            md5(coalesce(cast(id as varchar ), '')
+         || '|' || coalesce(cast(to_timestamp_ntz(convert_timezone('UTC', current_timestamp())) as varchar ), '')
+        ) as dbt_scd_id
+
+        from snapshot_query
+    ),
+
+    updates_source_data as (
+
+        select
+            *,
+            id as dbt_unique_key,
+            to_timestamp_ntz(convert_timezone('UTC', current_timestamp())) as dbt_updated_at,
+            to_timestamp_ntz(convert_timezone('UTC', current_timestamp())) as dbt_valid_from,
+            to_timestamp_ntz(convert_timezone('UTC', current_timestamp())) as dbt_valid_to
+
+        from snapshot_query
+    ),
+
+    insertions as (
+
+        select
+            'insert' as dbt_change_type,
+            source_data.*
+
+        from insertions_source_data as source_data
+        left outer join snapshotted_data on snapshotted_data.dbt_unique_key = source_data.dbt_unique_key
+        where snapshotted_data.dbt_unique_key is null
+           or (
+                snapshotted_data.dbt_unique_key is not null
+            and (
+                (snapshotted_data."NAME" != source_data."NAME"
+        or
+        (
+            ((snapshotted_data."NAME" is null) and not (source_data."NAME" is null))
+            or
+            ((not snapshotted_data."NAME" is null) and (source_data."NAME" is null))
+        ) or snapshotted_data."IS_SUPERHOST" != source_data."IS_SUPERHOST"
+        or
+        (
+            ((snapshotted_data."IS_SUPERHOST" is null) and not (source_data."IS_SUPERHOST" is null))
+            or
+            ((not snapshotted_data."IS_SUPERHOST" is null) and (source_data."IS_SUPERHOST" is null))
+        ))
+            )
+        )
+
+    ),
+
+    updates as (
+
+        select
+            'update' as dbt_change_type,
+            source_data.*,
+            snapshotted_data.dbt_scd_id
+
+        from updates_source_data as source_data
+        join snapshotted_data on snapshotted_data.dbt_unique_key = source_data.dbt_unique_key
+        where (
+            (snapshotted_data."NAME" != source_data."NAME"
+        or
+        (
+            ((snapshotted_data."NAME" is null) and not (source_data."NAME" is null))
+            or
+            ((not snapshotted_data."NAME" is null) and (source_data."NAME" is null))
+        ) or snapshotted_data."IS_SUPERHOST" != source_data."IS_SUPERHOST"
+        or
+        (
+            ((snapshotted_data."IS_SUPERHOST" is null) and not (source_data."IS_SUPERHOST" is null))
+            or
+            ((not snapshotted_data."IS_SUPERHOST" is null) and (source_data."IS_SUPERHOST" is null))
+        ))
+        )
+    )
+
+    select * from insertions
+    union all
+    select * from updates
+
+        );
+[0m11:33:10.255454 [debug] [Thread-1  ]: SQL status: SUCCESS 1 in 0.768 seconds
+[0m11:33:10.264406 [debug] [Thread-1  ]: Using snowflake connection "snapshot.dbt_fisrt_project.DIM_SCD_Host"
+[0m11:33:10.266408 [debug] [Thread-1  ]: On snapshot.dbt_fisrt_project.DIM_SCD_Host: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "dbt_fisrt_project", "target_name": "dev", "node_id": "snapshot.dbt_fisrt_project.DIM_SCD_Host"} */
+describe table "AIRBNB_LIRAN"."DWH"."DIM_SCD_HOST__dbt_tmp"
+[0m11:33:10.415401 [debug] [Thread-1  ]: SQL status: SUCCESS 11 in 0.147 seconds
+[0m11:33:10.424344 [debug] [Thread-1  ]: Using snowflake connection "snapshot.dbt_fisrt_project.DIM_SCD_Host"
+[0m11:33:10.425345 [debug] [Thread-1  ]: On snapshot.dbt_fisrt_project.DIM_SCD_Host: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "dbt_fisrt_project", "target_name": "dev", "node_id": "snapshot.dbt_fisrt_project.DIM_SCD_Host"} */
+describe table "AIRBNB_LIRAN"."DWH"."DIM_SCD_HOST"
+[0m11:33:10.603453 [debug] [Thread-1  ]: SQL status: SUCCESS 9 in 0.185 seconds
+[0m11:33:10.603453 [debug] [Thread-1  ]: Using snowflake connection "snapshot.dbt_fisrt_project.DIM_SCD_Host"
+[0m11:33:10.603453 [debug] [Thread-1  ]: On snapshot.dbt_fisrt_project.DIM_SCD_Host: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "dbt_fisrt_project", "target_name": "dev", "node_id": "snapshot.dbt_fisrt_project.DIM_SCD_Host"} */
+describe table "AIRBNB_LIRAN"."DWH"."DIM_SCD_HOST__dbt_tmp"
+[0m11:33:10.756677 [debug] [Thread-1  ]: SQL status: SUCCESS 11 in 0.139 seconds
+[0m11:33:10.756677 [debug] [Thread-1  ]: Using snowflake connection "snapshot.dbt_fisrt_project.DIM_SCD_Host"
+[0m11:33:10.756677 [debug] [Thread-1  ]: On snapshot.dbt_fisrt_project.DIM_SCD_Host: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "dbt_fisrt_project", "target_name": "dev", "node_id": "snapshot.dbt_fisrt_project.DIM_SCD_Host"} */
+describe table "AIRBNB_LIRAN"."DWH"."DIM_SCD_HOST"
+[0m11:33:10.906635 [debug] [Thread-1  ]: SQL status: SUCCESS 9 in 0.139 seconds
+[0m11:33:10.926141 [debug] [Thread-1  ]: Using snowflake connection "snapshot.dbt_fisrt_project.DIM_SCD_Host"
+[0m11:33:10.928163 [debug] [Thread-1  ]: On snapshot.dbt_fisrt_project.DIM_SCD_Host: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "dbt_fisrt_project", "target_name": "dev", "node_id": "snapshot.dbt_fisrt_project.DIM_SCD_Host"} */
+describe table "AIRBNB_LIRAN"."DWH"."DIM_SCD_HOST__dbt_tmp"
+[0m11:33:11.077466 [debug] [Thread-1  ]: SQL status: SUCCESS 11 in 0.149 seconds
+[0m11:33:11.097152 [debug] [Thread-1  ]: Writing runtime sql for node "snapshot.dbt_fisrt_project.DIM_SCD_Host"
+[0m11:33:11.101153 [debug] [Thread-1  ]: Using snowflake connection "snapshot.dbt_fisrt_project.DIM_SCD_Host"
+[0m11:33:11.102153 [debug] [Thread-1  ]: On snapshot.dbt_fisrt_project.DIM_SCD_Host: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "dbt_fisrt_project", "target_name": "dev", "node_id": "snapshot.dbt_fisrt_project.DIM_SCD_Host"} */
+BEGIN
+[0m11:33:11.433756 [debug] [Thread-1  ]: SQL status: SUCCESS 1 in 0.333 seconds
+[0m11:33:11.433756 [debug] [Thread-1  ]: Using snowflake connection "snapshot.dbt_fisrt_project.DIM_SCD_Host"
+[0m11:33:11.433756 [debug] [Thread-1  ]: On snapshot.dbt_fisrt_project.DIM_SCD_Host: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "dbt_fisrt_project", "target_name": "dev", "node_id": "snapshot.dbt_fisrt_project.DIM_SCD_Host"} */
+merge into "AIRBNB_LIRAN"."DWH"."DIM_SCD_HOST" as DBT_INTERNAL_DEST
+    using "AIRBNB_LIRAN"."DWH"."DIM_SCD_HOST__dbt_tmp" as DBT_INTERNAL_SOURCE
+    on DBT_INTERNAL_SOURCE.dbt_scd_id = DBT_INTERNAL_DEST.dbt_scd_id
+
+    when matched
+     and DBT_INTERNAL_DEST.dbt_valid_to is null
+     and DBT_INTERNAL_SOURCE.dbt_change_type in ('update', 'delete')
+        then update
+        set dbt_valid_to = DBT_INTERNAL_SOURCE.dbt_valid_to
+
+    when not matched
+     and DBT_INTERNAL_SOURCE.dbt_change_type = 'insert'
+        then insert ("ID", "NAME", "IS_SUPERHOST", "CREATED_AT", "UPDATED_AT", "DBT_UPDATED_AT", "DBT_VALID_FROM", "DBT_VALID_TO", "DBT_SCD_ID")
+        values ("ID", "NAME", "IS_SUPERHOST", "CREATED_AT", "UPDATED_AT", "DBT_UPDATED_AT", "DBT_VALID_FROM", "DBT_VALID_TO", "DBT_SCD_ID")
+
+;
+[0m11:33:12.213911 [debug] [Thread-1  ]: SQL status: SUCCESS 2 in 0.775 seconds
+[0m11:33:12.213911 [debug] [Thread-1  ]: Using snowflake connection "snapshot.dbt_fisrt_project.DIM_SCD_Host"
+[0m11:33:12.213911 [debug] [Thread-1  ]: On snapshot.dbt_fisrt_project.DIM_SCD_Host: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "dbt_fisrt_project", "target_name": "dev", "node_id": "snapshot.dbt_fisrt_project.DIM_SCD_Host"} */
+COMMIT
+[0m11:33:12.677855 [debug] [Thread-1  ]: SQL status: SUCCESS 1 in 0.459 seconds
+[0m11:33:12.741323 [debug] [Thread-1  ]: On snapshot.dbt_fisrt_project.DIM_SCD_Host: Close
+[0m11:33:12.945469 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '53e5f394-507e-45c2-9fb2-8bb6f38bb032', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026AE6F89370>]}
+[0m11:33:12.945469 [info ] [Thread-1  ]: 1 of 1 OK snapshotted DWH.DIM_SCD_Host ......................................... [[32mSUCCESS 2[0m in 5.43s]
+[0m11:33:12.945469 [debug] [Thread-1  ]: Finished running node snapshot.dbt_fisrt_project.DIM_SCD_Host
+[0m11:33:12.945469 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m11:33:12.945469 [debug] [MainThread]: Connection 'list_AIRBNB_LIRAN' was properly closed.
+[0m11:33:12.945469 [debug] [MainThread]: Connection 'list_AIRBNB_LIRAN_DEV' was properly closed.
+[0m11:33:12.945469 [debug] [MainThread]: Connection 'list_AIRBNB_LIRAN_DWH' was properly closed.
+[0m11:33:12.945469 [debug] [MainThread]: Connection 'snapshot.dbt_fisrt_project.DIM_SCD_Host' was properly closed.
+[0m11:33:12.962290 [info ] [MainThread]: 
+[0m11:33:12.963290 [info ] [MainThread]: Finished running 1 snapshot in 0 hours 0 minutes and 9.56 seconds (9.56s).
+[0m11:33:12.966821 [debug] [MainThread]: Command end result
+[0m11:33:13.026659 [info ] [MainThread]: 
+[0m11:33:13.026659 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m11:33:13.026659 [info ] [MainThread]: 
+[0m11:33:13.026659 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m11:33:13.026659 [debug] [MainThread]: Command `dbt snapshot` succeeded at 11:33:13.026659 after 11.34 seconds
+[0m11:33:13.026659 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026AE30E6FA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026AE56E0A30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026AE35B93A0>]}
+[0m11:33:13.042087 [debug] [MainThread]: Flushing usage events
+[0m11:34:17.740416 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028953717400>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028954094B50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000289561C3D00>]}
+
+
+============================== 11:34:17.756039 | cecad5e1-bf3f-4d03-946b-6d74c4fbbbfe ==============================
+[0m11:34:17.756039 [info ] [MainThread]: Running with dbt=1.8.4
+[0m11:34:17.756039 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\Dell\\.dbt', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'C:\\Users\\Dell\\DBT_PROJECT\\dbt_fisrt_project\\logs', 'warn_error': 'None', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'invocation_command': 'dbt snapshot --select Dim_SCD_Host.sql', 'log_format': 'default', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m11:34:18.511876 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'cecad5e1-bf3f-4d03-946b-6d74c4fbbbfe', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028953AF5E80>]}
+[0m11:34:18.595312 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'cecad5e1-bf3f-4d03-946b-6d74c4fbbbfe', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028956F4A790>]}
+[0m11:34:18.611870 [info ] [MainThread]: Registered adapter: snowflake=1.8.3
+[0m11:34:18.611870 [debug] [MainThread]: checksum: 54398663eddc8e4ac172fdab397e09b2aa6984947a84e6ec7983096c3fae7b7a, vars: {}, profile: , target: , version: 1.8.4
+[0m11:34:18.916557 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m11:34:18.916557 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m11:34:18.994685 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'cecad5e1-bf3f-4d03-946b-6d74c4fbbbfe', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028957241130>]}
+[0m11:34:19.246191 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'cecad5e1-bf3f-4d03-946b-6d74c4fbbbfe', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028957241220>]}
+[0m11:34:19.246191 [info ] [MainThread]: Found 4 models, 4 data tests, 1 snapshot, 448 macros
+[0m11:34:19.261921 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'cecad5e1-bf3f-4d03-946b-6d74c4fbbbfe', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028955C096D0>]}
+[0m11:34:19.261921 [info ] [MainThread]: 
+[0m11:34:19.261921 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m11:34:19.261921 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_AIRBNB_LIRAN'
+[0m11:34:19.300662 [debug] [ThreadPool]: Using snowflake connection "list_AIRBNB_LIRAN"
+[0m11:34:19.301425 [debug] [ThreadPool]: On list_AIRBNB_LIRAN: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "dbt_fisrt_project", "target_name": "dev", "connection_name": "list_AIRBNB_LIRAN"} */
+show terse schemas in database AIRBNB_LIRAN
+    limit 10000
+[0m11:34:19.301425 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:34:20.643565 [debug] [ThreadPool]: SQL status: SUCCESS 5 in 1.339 seconds
+[0m11:34:20.647565 [debug] [ThreadPool]: On list_AIRBNB_LIRAN: Close
+[0m11:34:20.865443 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_AIRBNB_LIRAN_DEV'
+[0m11:34:20.881655 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_AIRBNB_LIRAN_DWH'
+[0m11:34:20.911439 [debug] [ThreadPool]: Using snowflake connection "list_AIRBNB_LIRAN_DEV"
+[0m11:34:20.913592 [debug] [ThreadPool]: On list_AIRBNB_LIRAN_DEV: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "dbt_fisrt_project", "target_name": "dev", "connection_name": "list_AIRBNB_LIRAN_DEV"} */
+show objects in AIRBNB_LIRAN.DEV limit 10000
+[0m11:34:20.913592 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:34:20.913592 [debug] [ThreadPool]: Using snowflake connection "list_AIRBNB_LIRAN_DWH"
+[0m11:34:20.930059 [debug] [ThreadPool]: On list_AIRBNB_LIRAN_DWH: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "dbt_fisrt_project", "target_name": "dev", "connection_name": "list_AIRBNB_LIRAN_DWH"} */
+show objects in AIRBNB_LIRAN.DWH limit 10000
+[0m11:34:20.930059 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:34:22.199858 [debug] [ThreadPool]: SQL status: SUCCESS 12 in 1.275 seconds
+[0m11:34:22.205912 [debug] [ThreadPool]: On list_AIRBNB_LIRAN_DEV: Close
+[0m11:34:22.576422 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 1.638 seconds
+[0m11:34:22.580176 [debug] [ThreadPool]: On list_AIRBNB_LIRAN_DWH: Close
+[0m11:34:22.813540 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'cecad5e1-bf3f-4d03-946b-6d74c4fbbbfe', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028953B44310>]}
+[0m11:34:22.813540 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m11:34:22.813540 [info ] [MainThread]: 
+[0m11:34:22.813540 [debug] [Thread-1  ]: Began running node snapshot.dbt_fisrt_project.DIM_SCD_Host
+[0m11:34:22.813540 [info ] [Thread-1  ]: 1 of 1 START snapshot DWH.DIM_SCD_Host ......................................... [RUN]
+[0m11:34:22.830200 [debug] [Thread-1  ]: Acquiring new snowflake connection 'snapshot.dbt_fisrt_project.DIM_SCD_Host'
+[0m11:34:22.832200 [debug] [Thread-1  ]: Began compiling node snapshot.dbt_fisrt_project.DIM_SCD_Host
+[0m11:34:22.848850 [debug] [Thread-1  ]: Began executing node snapshot.dbt_fisrt_project.DIM_SCD_Host
+[0m11:34:23.001460 [debug] [Thread-1  ]: Using snowflake connection "snapshot.dbt_fisrt_project.DIM_SCD_Host"
+[0m11:34:23.002460 [debug] [Thread-1  ]: On snapshot.dbt_fisrt_project.DIM_SCD_Host: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "dbt_fisrt_project", "target_name": "dev", "node_id": "snapshot.dbt_fisrt_project.DIM_SCD_Host"} */
+select * from (
+        select NAME, IS_SUPERHOST from (
+                
+
+
+
+select * from AIRBNB_LIRAN.DEV.Raw_host
+
+            ) subq
+    ) as __dbt_sbq
+    where false
+    limit 0
+[0m11:34:23.003461 [debug] [Thread-1  ]: Opening a new connection, currently in state init
+[0m11:34:24.130026 [debug] [Thread-1  ]: SQL status: SUCCESS 0 in 1.135 seconds
+[0m11:34:24.152624 [debug] [Thread-1  ]: Using snowflake connection "snapshot.dbt_fisrt_project.DIM_SCD_Host"
+[0m11:34:24.154617 [debug] [Thread-1  ]: On snapshot.dbt_fisrt_project.DIM_SCD_Host: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "dbt_fisrt_project", "target_name": "dev", "node_id": "snapshot.dbt_fisrt_project.DIM_SCD_Host"} */
+describe table "AIRBNB_LIRAN"."DWH"."DIM_SCD_HOST"
+[0m11:34:24.285357 [debug] [Thread-1  ]: SQL status: SUCCESS 9 in 0.130 seconds
+[0m11:34:24.297142 [debug] [Thread-1  ]: Using snowflake connection "snapshot.dbt_fisrt_project.DIM_SCD_Host"
+[0m11:34:24.297142 [debug] [Thread-1  ]: On snapshot.dbt_fisrt_project.DIM_SCD_Host: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "dbt_fisrt_project", "target_name": "dev", "node_id": "snapshot.dbt_fisrt_project.DIM_SCD_Host"} */
+describe table "AIRBNB_LIRAN"."DWH"."DIM_SCD_HOST"
+[0m11:34:24.429809 [debug] [Thread-1  ]: SQL status: SUCCESS 9 in 0.138 seconds
+[0m11:34:24.545611 [debug] [Thread-1  ]: Using snowflake connection "snapshot.dbt_fisrt_project.DIM_SCD_Host"
+[0m11:34:24.545611 [debug] [Thread-1  ]: On snapshot.dbt_fisrt_project.DIM_SCD_Host: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "dbt_fisrt_project", "target_name": "dev", "node_id": "snapshot.dbt_fisrt_project.DIM_SCD_Host"} */
+create or replace temporary table "AIRBNB_LIRAN"."DWH"."DIM_SCD_HOST__dbt_tmp"
+         as
+        (with snapshot_query as (
+
+        
+
+
+
+select * from AIRBNB_LIRAN.DEV.Raw_host
+
+
+    ),
+
+    snapshotted_data as (
+
+        select *,
+            id as dbt_unique_key
+
+        from "AIRBNB_LIRAN"."DWH"."DIM_SCD_HOST"
+        where dbt_valid_to is null
+
+    ),
+
+    insertions_source_data as (
+
+        select
+            *,
+            id as dbt_unique_key,
+            to_timestamp_ntz(convert_timezone('UTC', current_timestamp())) as dbt_updated_at,
+            to_timestamp_ntz(convert_timezone('UTC', current_timestamp())) as dbt_valid_from,
+            nullif(to_timestamp_ntz(convert_timezone('UTC', current_timestamp())), to_timestamp_ntz(convert_timezone('UTC', current_timestamp()))) as dbt_valid_to,
+            md5(coalesce(cast(id as varchar ), '')
+         || '|' || coalesce(cast(to_timestamp_ntz(convert_timezone('UTC', current_timestamp())) as varchar ), '')
+        ) as dbt_scd_id
+
+        from snapshot_query
+    ),
+
+    updates_source_data as (
+
+        select
+            *,
+            id as dbt_unique_key,
+            to_timestamp_ntz(convert_timezone('UTC', current_timestamp())) as dbt_updated_at,
+            to_timestamp_ntz(convert_timezone('UTC', current_timestamp())) as dbt_valid_from,
+            to_timestamp_ntz(convert_timezone('UTC', current_timestamp())) as dbt_valid_to
+
+        from snapshot_query
+    ),
+
+    insertions as (
+
+        select
+            'insert' as dbt_change_type,
+            source_data.*
+
+        from insertions_source_data as source_data
+        left outer join snapshotted_data on snapshotted_data.dbt_unique_key = source_data.dbt_unique_key
+        where snapshotted_data.dbt_unique_key is null
+           or (
+                snapshotted_data.dbt_unique_key is not null
+            and (
+                (snapshotted_data."NAME" != source_data."NAME"
+        or
+        (
+            ((snapshotted_data."NAME" is null) and not (source_data."NAME" is null))
+            or
+            ((not snapshotted_data."NAME" is null) and (source_data."NAME" is null))
+        ) or snapshotted_data."IS_SUPERHOST" != source_data."IS_SUPERHOST"
+        or
+        (
+            ((snapshotted_data."IS_SUPERHOST" is null) and not (source_data."IS_SUPERHOST" is null))
+            or
+            ((not snapshotted_data."IS_SUPERHOST" is null) and (source_data."IS_SUPERHOST" is null))
+        ))
+            )
+        )
+
+    ),
+
+    updates as (
+
+        select
+            'update' as dbt_change_type,
+            source_data.*,
+            snapshotted_data.dbt_scd_id
+
+        from updates_source_data as source_data
+        join snapshotted_data on snapshotted_data.dbt_unique_key = source_data.dbt_unique_key
+        where (
+            (snapshotted_data."NAME" != source_data."NAME"
+        or
+        (
+            ((snapshotted_data."NAME" is null) and not (source_data."NAME" is null))
+            or
+            ((not snapshotted_data."NAME" is null) and (source_data."NAME" is null))
+        ) or snapshotted_data."IS_SUPERHOST" != source_data."IS_SUPERHOST"
+        or
+        (
+            ((snapshotted_data."IS_SUPERHOST" is null) and not (source_data."IS_SUPERHOST" is null))
+            or
+            ((not snapshotted_data."IS_SUPERHOST" is null) and (source_data."IS_SUPERHOST" is null))
+        ))
+        )
+    )
+
+    select * from insertions
+    union all
+    select * from updates
+
+        );
+[0m11:34:25.629276 [debug] [Thread-1  ]: SQL status: SUCCESS 1 in 1.085 seconds
+[0m11:34:25.629276 [debug] [Thread-1  ]: Using snowflake connection "snapshot.dbt_fisrt_project.DIM_SCD_Host"
+[0m11:34:25.645101 [debug] [Thread-1  ]: On snapshot.dbt_fisrt_project.DIM_SCD_Host: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "dbt_fisrt_project", "target_name": "dev", "node_id": "snapshot.dbt_fisrt_project.DIM_SCD_Host"} */
+describe table "AIRBNB_LIRAN"."DWH"."DIM_SCD_HOST__dbt_tmp"
+[0m11:34:25.778872 [debug] [Thread-1  ]: SQL status: SUCCESS 11 in 0.135 seconds
+[0m11:34:25.778872 [debug] [Thread-1  ]: Using snowflake connection "snapshot.dbt_fisrt_project.DIM_SCD_Host"
+[0m11:34:25.778872 [debug] [Thread-1  ]: On snapshot.dbt_fisrt_project.DIM_SCD_Host: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "dbt_fisrt_project", "target_name": "dev", "node_id": "snapshot.dbt_fisrt_project.DIM_SCD_Host"} */
+describe table "AIRBNB_LIRAN"."DWH"."DIM_SCD_HOST"
+[0m11:34:25.945611 [debug] [Thread-1  ]: SQL status: SUCCESS 9 in 0.157 seconds
+[0m11:34:25.945611 [debug] [Thread-1  ]: Using snowflake connection "snapshot.dbt_fisrt_project.DIM_SCD_Host"
+[0m11:34:25.945611 [debug] [Thread-1  ]: On snapshot.dbt_fisrt_project.DIM_SCD_Host: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "dbt_fisrt_project", "target_name": "dev", "node_id": "snapshot.dbt_fisrt_project.DIM_SCD_Host"} */
+describe table "AIRBNB_LIRAN"."DWH"."DIM_SCD_HOST__dbt_tmp"
+[0m11:34:26.129239 [debug] [Thread-1  ]: SQL status: SUCCESS 11 in 0.175 seconds
+[0m11:34:26.129239 [debug] [Thread-1  ]: Using snowflake connection "snapshot.dbt_fisrt_project.DIM_SCD_Host"
+[0m11:34:26.129239 [debug] [Thread-1  ]: On snapshot.dbt_fisrt_project.DIM_SCD_Host: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "dbt_fisrt_project", "target_name": "dev", "node_id": "snapshot.dbt_fisrt_project.DIM_SCD_Host"} */
+describe table "AIRBNB_LIRAN"."DWH"."DIM_SCD_HOST"
+[0m11:34:26.265809 [debug] [Thread-1  ]: SQL status: SUCCESS 9 in 0.127 seconds
+[0m11:34:26.278465 [debug] [Thread-1  ]: Using snowflake connection "snapshot.dbt_fisrt_project.DIM_SCD_Host"
+[0m11:34:26.280473 [debug] [Thread-1  ]: On snapshot.dbt_fisrt_project.DIM_SCD_Host: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "dbt_fisrt_project", "target_name": "dev", "node_id": "snapshot.dbt_fisrt_project.DIM_SCD_Host"} */
+describe table "AIRBNB_LIRAN"."DWH"."DIM_SCD_HOST__dbt_tmp"
+[0m11:34:26.445670 [debug] [Thread-1  ]: SQL status: SUCCESS 11 in 0.175 seconds
+[0m11:34:26.480808 [debug] [Thread-1  ]: Writing runtime sql for node "snapshot.dbt_fisrt_project.DIM_SCD_Host"
+[0m11:34:26.484807 [debug] [Thread-1  ]: Using snowflake connection "snapshot.dbt_fisrt_project.DIM_SCD_Host"
+[0m11:34:26.486809 [debug] [Thread-1  ]: On snapshot.dbt_fisrt_project.DIM_SCD_Host: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "dbt_fisrt_project", "target_name": "dev", "node_id": "snapshot.dbt_fisrt_project.DIM_SCD_Host"} */
+BEGIN
+[0m11:34:26.636497 [debug] [Thread-1  ]: SQL status: SUCCESS 1 in 0.149 seconds
+[0m11:34:26.638500 [debug] [Thread-1  ]: Using snowflake connection "snapshot.dbt_fisrt_project.DIM_SCD_Host"
+[0m11:34:26.640499 [debug] [Thread-1  ]: On snapshot.dbt_fisrt_project.DIM_SCD_Host: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "dbt_fisrt_project", "target_name": "dev", "node_id": "snapshot.dbt_fisrt_project.DIM_SCD_Host"} */
+merge into "AIRBNB_LIRAN"."DWH"."DIM_SCD_HOST" as DBT_INTERNAL_DEST
+    using "AIRBNB_LIRAN"."DWH"."DIM_SCD_HOST__dbt_tmp" as DBT_INTERNAL_SOURCE
+    on DBT_INTERNAL_SOURCE.dbt_scd_id = DBT_INTERNAL_DEST.dbt_scd_id
+
+    when matched
+     and DBT_INTERNAL_DEST.dbt_valid_to is null
+     and DBT_INTERNAL_SOURCE.dbt_change_type in ('update', 'delete')
+        then update
+        set dbt_valid_to = DBT_INTERNAL_SOURCE.dbt_valid_to
+
+    when not matched
+     and DBT_INTERNAL_SOURCE.dbt_change_type = 'insert'
+        then insert ("ID", "NAME", "IS_SUPERHOST", "CREATED_AT", "UPDATED_AT", "DBT_UPDATED_AT", "DBT_VALID_FROM", "DBT_VALID_TO", "DBT_SCD_ID")
+        values ("ID", "NAME", "IS_SUPERHOST", "CREATED_AT", "UPDATED_AT", "DBT_UPDATED_AT", "DBT_VALID_FROM", "DBT_VALID_TO", "DBT_SCD_ID")
+
+;
+[0m11:34:27.240422 [debug] [Thread-1  ]: SQL status: SUCCESS 2 in 0.599 seconds
+[0m11:34:27.241422 [debug] [Thread-1  ]: Using snowflake connection "snapshot.dbt_fisrt_project.DIM_SCD_Host"
+[0m11:34:27.242424 [debug] [Thread-1  ]: On snapshot.dbt_fisrt_project.DIM_SCD_Host: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "dbt_fisrt_project", "target_name": "dev", "node_id": "snapshot.dbt_fisrt_project.DIM_SCD_Host"} */
+COMMIT
+[0m11:34:27.539404 [debug] [Thread-1  ]: SQL status: SUCCESS 1 in 0.295 seconds
+[0m11:34:27.585321 [debug] [Thread-1  ]: On snapshot.dbt_fisrt_project.DIM_SCD_Host: Close
+[0m11:34:27.802330 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'cecad5e1-bf3f-4d03-946b-6d74c4fbbbfe', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002895853D640>]}
+[0m11:34:27.803336 [info ] [Thread-1  ]: 1 of 1 OK snapshotted DWH.DIM_SCD_Host ......................................... [[32mSUCCESS 2[0m in 4.97s]
+[0m11:34:27.805328 [debug] [Thread-1  ]: Finished running node snapshot.dbt_fisrt_project.DIM_SCD_Host
+[0m11:34:27.808327 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m11:34:27.810329 [debug] [MainThread]: Connection 'list_AIRBNB_LIRAN' was properly closed.
+[0m11:34:27.811417 [debug] [MainThread]: Connection 'list_AIRBNB_LIRAN_DEV' was properly closed.
+[0m11:34:27.812944 [debug] [MainThread]: Connection 'list_AIRBNB_LIRAN_DWH' was properly closed.
+[0m11:34:27.813978 [debug] [MainThread]: Connection 'snapshot.dbt_fisrt_project.DIM_SCD_Host' was properly closed.
+[0m11:34:27.814979 [info ] [MainThread]: 
+[0m11:34:27.816940 [info ] [MainThread]: Finished running 1 snapshot in 0 hours 0 minutes and 8.55 seconds (8.55s).
+[0m11:34:27.819945 [debug] [MainThread]: Command end result
+[0m11:34:27.914490 [info ] [MainThread]: 
+[0m11:34:27.914490 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m11:34:27.914490 [info ] [MainThread]: 
+[0m11:34:27.914490 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m11:34:27.931586 [debug] [MainThread]: Command `dbt snapshot` succeeded at 11:34:27.931586 after 10.28 seconds
+[0m11:34:27.932580 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028953717400>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028956050F70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028953BC9DF0>]}
+[0m11:34:27.933582 [debug] [MainThread]: Flushing usage events
